@@ -1,9 +1,15 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
-@dataclass
+
+@dataclass(init=False)
 class Pessoa:
     nome: str
-    under_name: str = ""
+    under_name: str
+    enderecos: list[str] = field(default_factory=list)
+
+    # o post_init não será executado!!!
+    # def __post_init__(self):
+    #     print("É executado após o __init__")
 
     @property
     def nome_completo(self):
@@ -14,6 +20,7 @@ class Pessoa:
         nome, *under_nome = valor.split()
         self.nome = nome
         self.under_name = " ".join(under_nome)
+
 
 if __name__ == "__main__":
     p1 = Pessoa(" ")

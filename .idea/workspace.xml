@@ -5,7 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/advanced/01_conceitos/context.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/Composition.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/Composition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/Herança.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/Herança.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/abstract.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/abstract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/agregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/agregation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/association.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/association.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/auxiliar.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/auxiliar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/banco/Exercicio_Banco.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/banco/Exercicio_Banco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/banco/agencia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/banco/agencia.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/banco/clientes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/banco/clientes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/banco/conta.txt" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/banco/conta.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/banco/gerador.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/banco/gerador.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/classes_decordoras.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/classes_decordoras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/context.txt" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/collections_abc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/context_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/context_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/data_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/data_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/desafio.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/desafio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/enumeracao.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/enumeracao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/meus_dados.json" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/meus_dados.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/mixins/eletronico.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/mixins/eletronico.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/mixins/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/mixins/log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/mixins/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/mixins/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/mixins/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/mixins/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/named_tuple.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/named_tuple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/polimorfismo.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/polimorfismo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/principal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/repr.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/repr.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +50,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DanielBrown1998"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DanielBrown1998&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -39,23 +67,49 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2XJRLrLVWYSfjSfOVKnllmrDUul" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.collections_abc">
+    <configuration name="collections_abc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advanced/01_conceitos" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advanced/01_conceitos/collections_abc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="named_tuple" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,6 +133,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.collections_abc" />
         <item itemvalue="Python.named_tuple" />
       </list>
     </recent_temporary>

@@ -4,36 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/advanced/01_conceitos/context.txt" afterDir="false" />
+    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando collections">
+      <change afterPath="$PROJECT_DIR$/advanced/Modulos/date_time.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/Composition.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/Composition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/Herança.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/Herança.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/abstract.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/abstract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/agregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/agregation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/association.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/association.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/auxiliar.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/auxiliar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/banco/Exercicio_Banco.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/banco/Exercicio_Banco.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/banco/agencia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/banco/agencia.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/banco/clientes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/banco/clientes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/banco/conta.txt" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/banco/conta.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/banco/gerador.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/banco/gerador.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/classes_decordoras.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/classes_decordoras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/context.txt" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/collections_abc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/context_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/context_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/data_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/data_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/desafio.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/desafio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/enumeracao.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/enumeracao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/meus_dados.json" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/meus_dados.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/mixins/eletronico.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/mixins/eletronico.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/mixins/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/mixins/log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/mixins/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/mixins/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/mixins/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/mixins/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/named_tuple.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/named_tuple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/polimorfismo.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/polimorfismo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/principal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/01_conceitos/repr.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/01_conceitos/repr.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +61,7 @@
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.collections_abc">
+  <component name="RunManager" selected="Python.date_time">
     <configuration name="collections_abc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,6 +75,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advanced/01_conceitos/collections_abc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="date_time" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advanced/Modulos" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advanced/Modulos/date_time.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -133,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.date_time" />
         <item itemvalue="Python.collections_abc" />
         <item itemvalue="Python.named_tuple" />
       </list>
@@ -171,12 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698351294107</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="estudando collections">
+      <option name="closed" value="true" />
+      <created>1698694468649</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698694468649</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="estudando dataclasses" />
     <MESSAGE value="estudando namedtuple" />
-    <option name="LAST_COMMIT_MESSAGE" value="estudando namedtuple" />
+    <MESSAGE value="estudando collections" />
+    <option name="LAST_COMMIT_MESSAGE" value="estudando collections" />
   </component>
 </project>

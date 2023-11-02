@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando datetime">
-      <change afterPath="$PROJECT_DIR$/advanced/Modulos/date/calendario.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced/Modulos/date/date_time.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced/Modulos/date/emprestimo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intermediary/alagoritmo_guloso.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/advanced/Modulos/date_time.py" beforeDir="false" />
-    </list>
+    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando datetime" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

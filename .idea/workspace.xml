@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="introduzindo o pyside6">
+    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="revisando funções recursivas">
+      <change afterPath="$PROJECT_DIR$/Pyside6/intro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exp_reg/intro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exp_reg/metacaracteres.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/func/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/func/aula01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/func/aula02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/func/aula03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/func/aula04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/func/exercicio01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/stack.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intermediary/func_recursivas.py" beforeDir="false" afterPath="$PROJECT_DIR$/intermediary/func_recursivas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyregexp/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +64,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.aula01.executor": "Run",
+    "Python.aula02.executor": "Run",
+    "Python.aula03.executor": "Run",
+    "Python.aula04.executor": "Run",
+    "Python.exercicio01.executor": "Run",
     "Python.func_recursivas.executor": "Run",
+    "Python.intro.executor": "Run",
+    "Python.metacaracteres.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -67,8 +84,8 @@
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.func_recursivas">
-    <configuration name="algoritmo_guloso" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.exercicio01">
+    <configuration name="aula01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,11 +94,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/func" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/algoritmo_guloso.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/func/aula01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -90,7 +107,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="func_recursivas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,11 +116,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/func" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/func_recursivas.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/func/aula02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,7 +129,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="intro (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,11 +138,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advanced/Modulos/JSON" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/func" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advanced/Modulos/JSON/intro.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/func/aula03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,7 +151,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula04" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,11 +160,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advanced/Modulos/PathLib" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/func" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advanced/Modulos/PathLib/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/func/aula04.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,7 +173,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="os_shutil" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="exercicio01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,11 +182,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advanced/Modulos/_os" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/func" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advanced/Modulos/_os/os_shutil.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/func/exercicio01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.func_recursivas" />
-        <item itemvalue="Python.algoritmo_guloso" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.intro (1)" />
-        <item itemvalue="Python.os_shutil" />
+        <item itemvalue="Python.exercicio01" />
+        <item itemvalue="Python.aula04" />
+        <item itemvalue="Python.aula03" />
+        <item itemvalue="Python.aula02" />
+        <item itemvalue="Python.aula01" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +285,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704569950856</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="revisando funções recursivas">
+      <option name="closed" value="true" />
+      <created>1704577052066</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704577052066</updated>
+    </task>
+    <task id="LOCAL-00010" summary="revisando funções recursivas">
+      <option name="closed" value="true" />
+      <created>1704577065360</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704577065360</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -280,6 +313,7 @@
     <MESSAGE value="estudando o modulo os" />
     <MESSAGE value="checando um tabuleiro de sudoku" />
     <MESSAGE value="introduzindo o pyside6" />
-    <option name="LAST_COMMIT_MESSAGE" value="introduzindo o pyside6" />
+    <MESSAGE value="revisando funções recursivas" />
+    <option name="LAST_COMMIT_MESSAGE" value="revisando funções recursivas" />
   </component>
 </project>

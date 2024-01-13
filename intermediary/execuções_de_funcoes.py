@@ -9,7 +9,7 @@ def mult(x, y=1):
 def exec(func, x):
     intern = lambda y: func(x, y)
     # def intern(y):
-    #     return func(x, y)
+    #     return revisao(x, y)
     return intern
 
 

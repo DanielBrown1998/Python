@@ -44,7 +44,7 @@ while True:
         command, (name, age)
     )
     connection.commit()
-    if opc in 'n':
+    if opc in 'n': 
         break
 
 

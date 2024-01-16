@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="revisando dicionários">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banco_de_dados/aula01.py" beforeDir="false" afterPath="$PROJECT_DIR$/banco_de_dados/aula01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,58 +51,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.aula01 (1).executor": "Run",
-    "Python.aula01.executor": "Run",
-    "Python.aula02.executor": "Run",
-    "Python.aula03.executor": "Run",
-    "Python.aula04.executor": "Run",
-    "Python.aula05.executor": "Run",
-    "Python.aula06.executor": "Run",
-    "Python.aula07.executor": "Run",
-    "Python.exercicio01.executor": "Run",
-    "Python.exercicio02.executor": "Run",
-    "Python.func_recursivas.executor": "Run",
-    "Python.intro.executor": "Run",
-    "Python.metacaracteres.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "preferences.fileTypes"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.aula01 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula02.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula03.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula04.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula05.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula06.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula07.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio02.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio03.executor&quot;: &quot;Run&quot;,
+    &quot;Python.func_recursivas.executor&quot;: &quot;Run&quot;,
+    &quot;Python.intro.executor&quot;: &quot;Run&quot;,
+    &quot;Python.metacaracteres.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced\Modulos\date_time" />
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.aula07">
-    <configuration name="aula01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/banco_de_dados" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/banco_de_dados/aula01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.exercicio03">
     <configuration name="aula05" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
@@ -190,13 +170,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="exercicio03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/exercicio03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.exercicio03" />
         <item itemvalue="Python.aula07" />
         <item itemvalue="Python.exercicio02" />
         <item itemvalue="Python.aula06" />
         <item itemvalue="Python.aula05" />
-        <item itemvalue="Python.aula01 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705098488078</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="revisando dicionários">
+      <option name="closed" value="true" />
+      <created>1705152716401</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705152716401</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

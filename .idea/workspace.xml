@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="revisando dicionários">
+      <change afterPath="$PROJECT_DIR$/intermediary/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula08.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula09.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/exercicio04.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banco_de_dados/aula01.py" beforeDir="false" afterPath="$PROJECT_DIR$/banco_de_dados/aula01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,38 +55,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.aula01 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula03.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula04.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula05.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula06.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula07.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio03.executor&quot;: &quot;Run&quot;,
-    &quot;Python.func_recursivas.executor&quot;: &quot;Run&quot;,
-    &quot;Python.intro.executor&quot;: &quot;Run&quot;,
-    &quot;Python.metacaracteres.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.aula01 (1).executor": "Run",
+    "Python.aula01.executor": "Run",
+    "Python.aula02.executor": "Run",
+    "Python.aula03.executor": "Run",
+    "Python.aula04.executor": "Run",
+    "Python.aula05.executor": "Run",
+    "Python.aula06.executor": "Run",
+    "Python.aula07.executor": "Run",
+    "Python.aula08.executor": "Run",
+    "Python.aula09.executor": "Run",
+    "Python.aula10.executor": "Run",
+    "Python.exercicio01.executor": "Run",
+    "Python.exercicio02.executor": "Run",
+    "Python.exercicio03.executor": "Run",
+    "Python.exercicio04.executor": "Run",
+    "Python.func_recursivas.executor": "Run",
+    "Python.intro.executor": "Run",
+    "Python.metacaracteres.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\intermediary\revisao" />
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced\Modulos\date_time" />
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.exercicio03">
-    <configuration name="aula05" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.aula10">
+    <configuration name="aula08" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,11 +100,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/func" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/func/aula05.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/aula08.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +113,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="aula06" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula09" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,11 +122,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/func" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/func/aula06.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/aula09.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +135,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="aula07" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,33 +144,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/func" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/func/aula07.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="exercicio02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/func" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/func/exercicio02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/aula10.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,13 +179,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="exercicio04" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/exercicio04.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.aula10" />
+        <item itemvalue="Python.aula09" />
+        <item itemvalue="Python.exercicio04" />
+        <item itemvalue="Python.aula08" />
         <item itemvalue="Python.exercicio03" />
-        <item itemvalue="Python.aula07" />
-        <item itemvalue="Python.exercicio02" />
-        <item itemvalue="Python.aula06" />
-        <item itemvalue="Python.aula05" />
       </list>
     </recent_temporary>
   </component>

@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="revisando dicionários" />
+    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="revisando dicionários">
+      <change afterPath="$PROJECT_DIR$/exp_reg/grupos e retrovisores.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula11.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banco_de_dados/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/exp_reg/greedy e non-greedy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exp_reg/metacaracteres.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp_reg/metacaracteres.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,37 +54,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Python.aula01 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula03.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula04.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula05.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula06.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula07.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula08.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula09.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula10.executor&quot;: &quot;Run&quot;,
-    &quot;Python.delete.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio03.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio04.executor&quot;: &quot;Run&quot;,
-    &quot;Python.func_recursivas.executor&quot;: &quot;Run&quot;,
-    &quot;Python.intro.executor&quot;: &quot;Run&quot;,
-    &quot;Python.metacaracteres.executor&quot;: &quot;Run&quot;,
-    &quot;Python.select.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python.__init__.executor": "Run",
+    "Python.aula01 (1).executor": "Run",
+    "Python.aula01.executor": "Run",
+    "Python.aula02.executor": "Run",
+    "Python.aula03.executor": "Run",
+    "Python.aula04.executor": "Run",
+    "Python.aula05.executor": "Run",
+    "Python.aula06.executor": "Run",
+    "Python.aula07.executor": "Run",
+    "Python.aula08.executor": "Run",
+    "Python.aula09.executor": "Run",
+    "Python.aula10.executor": "Run",
+    "Python.aula11.executor": "Run",
+    "Python.delete.executor": "Run",
+    "Python.exercicio01.executor": "Run",
+    "Python.exercicio02.executor": "Run",
+    "Python.exercicio03.executor": "Run",
+    "Python.exercicio04.executor": "Run",
+    "Python.func_recursivas.executor": "Run",
+    "Python.greedy e non-greedy.executor": "Run",
+    "Python.grupos e retrovisores.executor": "Run",
+    "Python.intro.executor": "Run",
+    "Python.metacaracteres.executor": "Run",
+    "Python.select.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\intermediary\revisao" />
@@ -86,8 +96,8 @@
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.delete">
-    <configuration name="aula09" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.grupos e retrovisores">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,7 +110,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/aula09.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="aula10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,7 +132,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/aula10.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/aula11.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,7 +141,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="delete" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="greedy e non-greedy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,11 +150,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/banco_de_dados" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exp_reg" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/banco_de_dados/delete.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exp_reg/greedy e non-greedy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,7 +163,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="grupos e retrovisores" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,11 +172,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/banco_de_dados" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exp_reg" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\banco_de_dados\main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exp_reg/grupos e retrovisores.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,7 +185,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="select" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="metacaracteres" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,11 +194,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/banco_de_dados" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exp_reg" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/banco_de_dados/select.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exp_reg/metacaracteres.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,18 +209,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.delete" />
-        <item itemvalue="Python.select" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.aula10" />
-        <item itemvalue="Python.aula09" />
+        <item itemvalue="Python.grupos e retrovisores" />
+        <item itemvalue="Python.greedy e non-greedy" />
+        <item itemvalue="Python.metacaracteres" />
+        <item itemvalue="Python.aula11" />
+        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
       </set>
     </attachedChunks>
   </component>

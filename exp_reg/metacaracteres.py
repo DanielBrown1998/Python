@@ -5,9 +5,9 @@ import re
 # . == gualguer caractere (com exceção de guebras de linha), cada ponto significa uma letra
 # [] == conjunto de caracteres
 # guantificadores:
-# * == 0 ou n vezes {0,}
-# + == 1 ou n vezes {1,}
-# ? == 0 ou 1 vezes {0,1}
+# * == 0 ou n vezes: {0,}
+# + == 1 ou n vezes:  {1,}
+# ? == 0 ou 1 vezes: {0,1}
 # {n}
 # {mín, máx}
 

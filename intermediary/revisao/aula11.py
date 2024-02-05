@@ -1,3 +1,8 @@
+import sys
+
+import aula10
+
+
 def gen(stop: int, start: int = 0, step: int = 1) -> int:
     """
     this function works like range
@@ -10,5 +15,5 @@ def gen(stop: int, start: int = 0, step: int = 1) -> int:
         return start
 
 
-num = gen(10, 1, 2)
-print(*[c for c in num])
+print(__name__)
+print(*sys.path, sep='\n')

@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="revisando dicionários">
-      <change afterPath="$PROJECT_DIR$/exp_reg/grupos e retrovisores.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula11.py" afterDir="false" />
+    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="greedy and non-greedy">
+      <change afterPath="$PROJECT_DIR$/banco_de_dados/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banco_de_dados/mysql/.env-example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/exercicio05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/exercicio06.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/exercicio07.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banco_de_dados/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/exp_reg/greedy e non-greedy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exp_reg/metacaracteres.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp_reg/metacaracteres.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intermediary/revisao/aula10.py" beforeDir="false" afterPath="$PROJECT_DIR$/intermediary/revisao/aula10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intermediary/revisao/aula11.py" beforeDir="false" afterPath="$PROJECT_DIR$/intermediary/revisao/aula11.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,41 +58,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python.__init__.executor": "Run",
-    "Python.aula01 (1).executor": "Run",
-    "Python.aula01.executor": "Run",
-    "Python.aula02.executor": "Run",
-    "Python.aula03.executor": "Run",
-    "Python.aula04.executor": "Run",
-    "Python.aula05.executor": "Run",
-    "Python.aula06.executor": "Run",
-    "Python.aula07.executor": "Run",
-    "Python.aula08.executor": "Run",
-    "Python.aula09.executor": "Run",
-    "Python.aula10.executor": "Run",
-    "Python.aula11.executor": "Run",
-    "Python.delete.executor": "Run",
-    "Python.exercicio01.executor": "Run",
-    "Python.exercicio02.executor": "Run",
-    "Python.exercicio03.executor": "Run",
-    "Python.exercicio04.executor": "Run",
-    "Python.func_recursivas.executor": "Run",
-    "Python.greedy e non-greedy.executor": "Run",
-    "Python.grupos e retrovisores.executor": "Run",
-    "Python.intro.executor": "Run",
-    "Python.metacaracteres.executor": "Run",
-    "Python.select.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula01 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula02.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula03.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula04.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula05.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula06.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula07.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula08.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula09.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula10.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.delete.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio02.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio03.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio04.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio05.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio06.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio07.executor&quot;: &quot;Run&quot;,
+    &quot;Python.func_recursivas.executor&quot;: &quot;Run&quot;,
+    &quot;Python.greedy e non-greedy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.grupos e retrovisores.executor&quot;: &quot;Run&quot;,
+    &quot;Python.intro.executor&quot;: &quot;Run&quot;,
+    &quot;Python.metacaracteres.executor&quot;: &quot;Run&quot;,
+    &quot;Python.select.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\intermediary\revisao" />
@@ -96,29 +104,7 @@
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.grupos e retrovisores">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.exercicio07">
     <configuration name="aula11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
@@ -141,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="greedy e non-greedy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,11 +136,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exp_reg" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exp_reg/greedy e non-greedy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/aula12.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="grupos e retrovisores" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="exercicio05" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,11 +158,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exp_reg" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exp_reg/grupos e retrovisores.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/exercicio05.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,7 +171,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="metacaracteres" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="exercicio06" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,11 +180,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exp_reg" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exp_reg/metacaracteres.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/exercicio06.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="exercicio07" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/exercicio07.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -209,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.grupos e retrovisores" />
-        <item itemvalue="Python.greedy e non-greedy" />
-        <item itemvalue="Python.metacaracteres" />
+        <item itemvalue="Python.exercicio07" />
+        <item itemvalue="Python.aula12" />
+        <item itemvalue="Python.exercicio06" />
+        <item itemvalue="Python.exercicio05" />
         <item itemvalue="Python.aula11" />
-        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
@@ -353,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705437581719</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="greedy and non-greedy">
+      <option name="closed" value="true" />
+      <created>1706575113799</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1706575113799</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -368,6 +384,7 @@
     <MESSAGE value="revisando funções recursivas" />
     <MESSAGE value="revisando funções" />
     <MESSAGE value="revisando dicionários" />
-    <option name="LAST_COMMIT_MESSAGE" value="revisando dicionários" />
+    <MESSAGE value="greedy and non-greedy" />
+    <option name="LAST_COMMIT_MESSAGE" value="greedy and non-greedy" />
   </component>
 </project>

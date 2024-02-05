@@ -19,8 +19,8 @@
     <connection id="b0ad530b-f346-43a5-ba45-db8f8b5ebd44">
       <console name="Udemy" type="STANDARD" schema="" session="Main" />
     </connection>
-    <connection id="1790dad7-cf42-4bd8-b33c-9c11c7fa4b39">
-      <console name="Connection" type="STANDARD" schema="" session="Main" />
+    <connection id="fac9476e-ead8-4a1c-b5fb-a3398a70513e">
+      <console name="mysql" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -31,12 +31,21 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="b0ad530b-f346-43a5-ba45-db8f8b5ebd44" />
+    <connection id="fac9476e-ead8-4a1c-b5fb-a3398a70513e" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/banco_de_dados/db.sqlite3" connection-id="b0ad530b-f346-43a5-ba45-db8f8b5ebd44" session-id="MAIN" current-schema="main" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -141,9 +150,9 @@
           <object-name-filters />
         </object-filters>
       </connection>
-      <connection id="1790dad7-cf42-4bd8-b33c-9c11c7fa4b39" active="true" signed="true">
+      <connection id="fac9476e-ead8-4a1c-b5fb-a3398a70513e" active="true" signed="true">
         <database>
-          <name value="Connection" />
+          <name value="mysql" />
           <description value="" />
           <database-type value="MYSQL" />
           <config-type value="BASIC" />
@@ -204,7 +213,7 @@
           <tcp-port-to value="4999" />
           <debugger-type value="JDBC" />
         </debugger>
-        <object-filters hide-empty-schemas="true" hide-pseudo-columns="false" hide-audit-columns="false">
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false" hide-audit-columns="false">
           <object-type-filter>
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />

@@ -6,7 +6,6 @@ def super_list(*args):
             other_list: tuple = func(*args)
             list_final = [(my_list[i], other_list[i]) for i in range(len(my_list))]
             return list_final
-
         return list_intern
     return union
 
@@ -23,8 +22,8 @@ estate = {
 
 
 @super_list(*estate.keys())
-def zipper(*list: list | tuple):
-    return list
+def zipper(*args: list | tuple):
+    return args
 
 
 my_zip = zipper(*estate.values())

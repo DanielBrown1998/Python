@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="greedy and non-greedy">
-      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula13.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula14.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intermediary/revisao/exercicio08.py" afterDir="false" />
+    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando map, filter, reduce">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intermediary/revisao/exercicio07.py" beforeDir="false" afterPath="$PROJECT_DIR$/intermediary/revisao/exercicio07.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intermediary/revisao/aula14.py" beforeDir="false" afterPath="$PROJECT_DIR$/intermediary/revisao/aula14.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -369,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706575113799</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="estudando map, filter, reduce">
+      <option name="closed" value="true" />
+      <created>1707230519794</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1707230519795</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -385,6 +390,7 @@
     <MESSAGE value="revisando funções" />
     <MESSAGE value="revisando dicionários" />
     <MESSAGE value="greedy and non-greedy" />
-    <option name="LAST_COMMIT_MESSAGE" value="greedy and non-greedy" />
+    <MESSAGE value="estudando map, filter, reduce" />
+    <option name="LAST_COMMIT_MESSAGE" value="estudando map, filter, reduce" />
   </component>
 </project>

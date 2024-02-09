@@ -2,6 +2,8 @@ import pymysql
 import dotenv
 import os
 
+DEBUG = 0
+
 dotenv.load_dotenv()
 
 TABLE_NAME = 'customers'
@@ -22,13 +24,41 @@ with connection:
             'PRIMARY KEY (id)'
             ')'
         )
+    connection.commit()
+
+    if DEBUG == 1:
+        with connection.cursor() as cursor:
+            sql = (
+                f'INSERT INTO {TABLE_NAME} '
+                f'(nome, idade) VALUES (%(name)s, %(age)s) '
+            )
+            data = {
+                "name": 'Rafaela',
+                "age": 25,
+            }
+            result = cursor.execute(sql, data)
+
+        connection.commit()
+
+        with connection.cursor() as cursor:
+            sql = (
+                f'INSERT INTO {TABLE_NAME} '
+                f'(nome, idade) VALUES (%(name)s, %(age)s) '
+            )
+            data_1 = (
+                {"name": 'Sara', "age": 21, },
+                {"name": 'Thiago', "age": 41, },
+                {"name": 'Rose', "age": 30, },
+                {"name": 'Júlia', "age": 37, },
+            )
+            result_2 = cursor.executemany(sql, data_1)
+
         connection.commit()
 
     with connection.cursor() as cursor:
         sql = (
-            f'INSERT INTO {TABLE_NAME} '
-            f'(nome, idade) VALUES (%s, %s) '
+            f'select * from {TABLE_NAME}'
         )
-        data = ('Rafael', 23)
-        result = cursor.execute(sql, data)
-        connection.commit()
+        cursor.execute(sql)
+        receive_data = cursor.fetchall()
+        print(*receive_data, sep='\n')

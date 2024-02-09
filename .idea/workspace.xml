@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando map, filter, reduce">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando map, filter, reduce" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,49 +48,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python.__init__.executor": "Run",
-    "Python.aula01 (1).executor": "Run",
-    "Python.aula01.executor": "Run",
-    "Python.aula02.executor": "Run",
-    "Python.aula03.executor": "Run",
-    "Python.aula04.executor": "Run",
-    "Python.aula05.executor": "Run",
-    "Python.aula06.executor": "Run",
-    "Python.aula07.executor": "Run",
-    "Python.aula08.executor": "Run",
-    "Python.aula09.executor": "Run",
-    "Python.aula10.executor": "Run",
-    "Python.aula11.executor": "Run",
-    "Python.aula12.executor": "Run",
-    "Python.aula13.executor": "Run",
-    "Python.aula14.executor": "Run",
-    "Python.delete.executor": "Run",
-    "Python.exercicio01.executor": "Run",
-    "Python.exercicio02.executor": "Run",
-    "Python.exercicio03.executor": "Run",
-    "Python.exercicio04.executor": "Run",
-    "Python.exercicio05.executor": "Run",
-    "Python.exercicio06.executor": "Run",
-    "Python.exercicio07.executor": "Run",
-    "Python.exercicio08.executor": "Run",
-    "Python.func_recursivas.executor": "Run",
-    "Python.greedy e non-greedy.executor": "Run",
-    "Python.grupos e retrovisores.executor": "Run",
-    "Python.intro.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.metacaracteres.executor": "Run",
-    "Python.select.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula01 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula02.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula03.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula04.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula05.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula06.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula07.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula08.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula09.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula10.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula13.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula14.executor&quot;: &quot;Run&quot;,
+    &quot;Python.delete.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio02.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio03.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio04.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio05.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio06.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio07.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio08.executor&quot;: &quot;Run&quot;,
+    &quot;Python.func_recursivas.executor&quot;: &quot;Run&quot;,
+    &quot;Python.greedy e non-greedy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.grupos e retrovisores.executor&quot;: &quot;Run&quot;,
+    &quot;Python.intro.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.metacaracteres.executor&quot;: &quot;Run&quot;,
+    &quot;Python.select.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\intermediary\revisao" />

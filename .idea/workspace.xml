@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando map, filter, reduce">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando pymysql">
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula15.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula16.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/exercicio09.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/lista_atual.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediary/revisao/my_profile.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banco_de_dados/mysql/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/banco_de_dados/mysql/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intermediary/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/intermediary/file.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +45,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -72,6 +79,8 @@
     &quot;Python.aula12.executor&quot;: &quot;Run&quot;,
     &quot;Python.aula13.executor&quot;: &quot;Run&quot;,
     &quot;Python.aula14.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula15.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aula16.executor&quot;: &quot;Run&quot;,
     &quot;Python.delete.executor&quot;: &quot;Run&quot;,
     &quot;Python.exercicio01.executor&quot;: &quot;Run&quot;,
     &quot;Python.exercicio02.executor&quot;: &quot;Run&quot;,
@@ -81,6 +90,7 @@
     &quot;Python.exercicio06.executor&quot;: &quot;Run&quot;,
     &quot;Python.exercicio07.executor&quot;: &quot;Run&quot;,
     &quot;Python.exercicio08.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercicio09.executor&quot;: &quot;Run&quot;,
     &quot;Python.func_recursivas.executor&quot;: &quot;Run&quot;,
     &quot;Python.greedy e non-greedy.executor&quot;: &quot;Run&quot;,
     &quot;Python.grupos e retrovisores.executor&quot;: &quot;Run&quot;,
@@ -102,29 +112,7 @@
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="aula13" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/aula13.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.exercicio09">
     <configuration name="aula14" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
@@ -147,7 +135,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="exercicio07" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula15" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -160,7 +148,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/exercicio07.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/aula15.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,7 +157,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="exercicio08" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aula16" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,7 +170,29 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/exercicio08.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/aula16.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="exercicio09" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/exercicio09.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -215,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.exercicio09" />
+        <item itemvalue="Python.aula16" />
+        <item itemvalue="Python.aula15" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.aula14" />
-        <item itemvalue="Python.aula13" />
-        <item itemvalue="Python.exercicio08" />
-        <item itemvalue="Python.exercicio07" />
       </list>
     </recent_temporary>
   </component>
@@ -383,7 +393,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707241058170</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="estudando pymysql">
+      <option name="closed" value="true" />
+      <created>1707515498037</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1707515498037</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -400,6 +418,7 @@
     <MESSAGE value="revisando dicionários" />
     <MESSAGE value="greedy and non-greedy" />
     <MESSAGE value="estudando map, filter, reduce" />
-    <option name="LAST_COMMIT_MESSAGE" value="estudando map, filter, reduce" />
+    <MESSAGE value="estudando pymysql" />
+    <option name="LAST_COMMIT_MESSAGE" value="estudando pymysql" />
   </component>
 </project>

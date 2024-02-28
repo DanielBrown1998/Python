@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando pymysql">
-      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula15.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intermediary/revisao/aula16.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intermediary/revisao/exercicio09.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intermediary/revisao/lista_atual.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intermediary/revisao/my_profile.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advanced/revisão/aula01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intermediary/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/intermediary/file.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,8 +108,8 @@
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.exercicio09">
-    <configuration name="aula14" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.aula01">
+    <configuration name="aula01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,11 +118,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary/revisao" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advanced/revisão" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/revisao/aula14.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advanced/revisão/aula01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -225,18 +221,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.aula01" />
         <item itemvalue="Python.exercicio09" />
         <item itemvalue="Python.aula16" />
         <item itemvalue="Python.aula15" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.aula14" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+        <option value="bundled-python-sdk-d68999036c7f-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.14475.56" />
       </set>
     </attachedChunks>
   </component>

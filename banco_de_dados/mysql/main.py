@@ -13,6 +13,7 @@ connection = pymysql.connect(
     user=os.environ["MYSQL_USER"],
     password=os.environ["MYSQL_ROOT_PASSWORD"],
     database=os.environ["MYSQL_DATABASE"],
+    cursorclass=None,
 )
 with connection:
     with connection.cursor() as cursor:

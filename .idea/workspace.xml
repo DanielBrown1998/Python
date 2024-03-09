@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando pymysql">
-      <change afterPath="$PROJECT_DIR$/Teste de Software (TDD)/calculadora.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Teste de Software (TDD)/test_calculadora.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced/revisão/aula02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advanced/revisão/aula03.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/advanced/revisão/aula01.py" beforeDir="false" afterPath="$PROJECT_DIR$/advanced/revisão/aula01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banco_de_dados/mysql/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/banco_de_dados/mysql/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,29 @@
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.data">
+  <component name="RunManager" selected="Python.aula03">
+    <configuration name="aula03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advanced/revisão" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advanced/revisão/aula03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
@@ -170,21 +190,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test.Test.test_soma_10_10_retorna_20" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Teste de Software (TDD)" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.Test.test_soma_10_10_retorna_20&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests in test_calculadora.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
@@ -202,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.aula03" />
         <item itemvalue="Python.data" />
         <item itemvalue="Python tests.Python tests in test_calculadora.py" />
         <item itemvalue="Python tests.Python tests for test.TestCalculadora.test_soma_10_10_retorna_20" />
         <item itemvalue="Python tests.Python tests for test.TestCalculadora" />
-        <item itemvalue="Python tests.Python tests for test.Test.test_soma_10_10_retorna_20" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +383,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707515498037</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="estudando pymysql">
+      <option name="closed" value="true" />
+      <created>1709687507576</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709687507576</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

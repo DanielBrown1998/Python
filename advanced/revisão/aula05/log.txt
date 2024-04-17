@@ -1,0 +1,24 @@
+LogFileMixin, Success: Success: 2024-04-17 17:08:55.566536
+LogFileMixin, Error: Error: 2024-04-17 17:08:55.567539
+LogFileMixin, Success: Success: 2024-04-17 17:09:37.601039
+LogFileMixin, Error: Error: 2024-04-17 17:09:37.604045
+LogFileMixin, Success: Success: 2024-04-17 17:10:21.537249
+LogFileMixin, Error: Error: 2024-04-17 17:10:21.543255
+LogFileMixin, Success: Success: 2024-04-17 17:10:55.823509
+LogFileMixin, Error: Error: 2024-04-17 17:10:55.824508
+LogFileMixin, Success: Success: 2024-04-17 17:11:29.919743
+LogFileMixin, Success: Success: 2024-04-17 17:11:29.919743
+LogFileMixin, Error: Error: 2024-04-17 17:11:29.921739
+LogFileMixin, Error: Error: 2024-04-17 17:11:29.921739
+LogFileMixin, Success: Success: 2024-04-17 17:12:36.716703
+LogFileMixin, Error: Error: 2024-04-17 17:12:36.734707
+LogFileMixin, Success: Success: 2024-04-17 17:13:47.539794
+LogFileMixin, Error: Error: 2024-04-17 17:13:47.540798
+LogFileMixin, 
+LogFileMixin, 
+LogFileMixin, Success: 2024-04-17 17:14:33.616126
+LogFileMixin, Error: 2024-04-17 17:14:33.616126
+LogFileMixin, Success: 2024-04-17 17:15:20.631574
+LogFileMixin, Error: 2024-04-17 17:15:20.631574
+SmartPhone, iphone 15 iniciado com sucesso
+SmartPhone, iphone 15 desligado com sucesso

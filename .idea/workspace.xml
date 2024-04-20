@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando pymysql">
-      <change afterPath="$PROJECT_DIR$/advanced/01_conceitos/stack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced/revisão/aula04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced/revisão/aula05/eletronico.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced/revisão/aula05/log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced/revisão/aula05/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advanced/revisão/aula06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estrutura_de_dados_II/arquivo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estrutura_de_dados_II/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estrutura_de_dados_II/arquivo2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estrutura_de_dados_II/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/estrutura_de_dados_II/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +127,7 @@
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main (2)">
     <configuration name="aula04" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
@@ -291,9 +284,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.log" />
-        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.eletronico" />
         <item itemvalue="Python.eletronico" />
       </list>

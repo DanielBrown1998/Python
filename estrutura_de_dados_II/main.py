@@ -5,14 +5,14 @@ file_dir = str(Path(__file__).parent / '_arquivo.txt'), str(Path(__file__).paren
 
 
 class No:
-    def __init__(self, word, file):
+    def __init__(self, word, file, line):
         self.valor: str = word
         self.esquerda: No | None = None
         self.direita: No | None = None
         self.altura: int = 1
         self.arquivos = {}
         if file not in self.arquivos.keys():
-            self.arquivos[file] = 1
+            self.arquivos[file] = [line]
 
 
 class Arvore:
@@ -56,27 +56,28 @@ class Arvore:
         a.altura = 1 + max(self.altura(a.esquerda), self.altura(a.direita))
         return a
 
-    def inserir(self, val: str, raiz: No, file: str) -> No | None:
+    def inserir(self, val: str, raiz: No, file: str, line: int) -> No | None:
 
         # Se o no for o inicial
         if raiz is None:
-            return No(val, file[-12::1])
+            return No(val, file[-12::1], line)
 
         # Se o valor do no for menor ou igual que o valor da raiz
         elif val < raiz.valor:
             # O no será inserido na esquerda do no raiz
-            raiz.esquerda = self.inserir(val, raiz.esquerda, file)
+            raiz.esquerda = self.inserir(val, raiz.esquerda, file, line)
 
         elif val == raiz.valor:
             try:
-                raiz.arquivos[file[-12::]] += 1
+                if line not in raiz.arquivos[file[-12::]]:
+                    raiz.arquivos[file[-12::]].append(line)
             except KeyError:
-                raiz.arquivos.update({f"{file[-12::]}": 1})
+                raiz.arquivos.update({f"{file[-12::]}": list([line])})
 
         # Se o valor do no for maior que o valor da raiz
         elif val > raiz.valor:
             # O no será inserido na direita do no raiz
-            raiz.direita = self.inserir(val, raiz.direita, file)
+            raiz.direita = self.inserir(val, raiz.direita, file, line)
 
         # Seta uma nova altura no nó (pega a maior e adiciona 1)
         raiz.altura = 1 + max(self.altura(raiz.esquerda), self.altura(raiz.direita))
@@ -112,7 +113,7 @@ class Arvore:
 
         return raiz
 
-    # percorrendo a matriz
+    # percorrendo a árvore
     def in_order(self, raiz: No) -> None:
         # Funcão para imprimir
         if raiz is None:
@@ -182,7 +183,7 @@ def main(func):
     def intern_func(*args):
         raiz = None
         # lendo os arquivos
-        for e, arquivo in enumerate(args):
+        for arquivo in args:
             try:
                 with open(arquivo, 'r', encoding='utf-8') as file:
                     lista = file.readlines()
@@ -193,7 +194,7 @@ def main(func):
                     print(f"arquivos criados, agora ponha algum texto nele!")
                     lista = file.readlines()
             # lendo as linhas
-            for c in lista:
+            for e, c in enumerate(lista):
                 # percorrendo as linhas
                 sub_lista = c.split()
 
@@ -202,12 +203,12 @@ def main(func):
                     # caso a palavra contenha menos de 3 letras
                     if len(item) < 3:
                         continue
-                    # todo regex
+                        
                     item = item.lower().strip().replace('\n', '')
                     item = item.replace(',', '').replace('"', '')
                     item = item.replace('.', '').replace("'", '')
                     item = item.replace('?', '').replace('!', '')
-                    raiz = tree.inserir(item, raiz, arquivo)
+                    raiz = tree.inserir(item, raiz, arquivo, e+1)
 
         # executa em 2°
         while True:

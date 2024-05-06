@@ -243,9 +243,9 @@ sair -> para sair;
 
 
 @main
-def execute(lista: list | tuple):
+def execute(lista_arquivos: list|tuple) -> None:
     """
-    :param lista: busca os destinos do arquivo
+    :param lista_arquivos: busca os destinos do arquivo
     :return: None
     """
     # executa em 3°

@@ -114,7 +114,7 @@ class Arvore:
         return raiz
 
     # percorrendo a árvore
-    def in_order(self, raiz: No) -> None:
+    def in_order(self, raiz: No | None) -> None:
         # Funcão para imprimir
         if raiz is None:
             return
@@ -122,7 +122,7 @@ class Arvore:
         print(f"{raiz.valor}->{raiz.arquivos}")
         self.in_order(raiz.direita)
 
-    def pre_order(self, raiz: No) -> None:
+    def pre_order(self, raiz: No | None) -> None:
         #Funcão para imprimir
         if raiz is None:
             return
@@ -130,7 +130,7 @@ class Arvore:
         self.pre_order(raiz.esquerda)
         self.pre_order(raiz.direita)
 
-    def pos_order(self, raiz: No) -> None:
+    def pos_order(self, raiz: No | None) -> None:
         # Funcão para imprimir
         if raiz is None:
             return
@@ -157,30 +157,11 @@ class Arvore:
         return raiz
 
 
-# teste
-# Arvore = Arvore()
-# R = None
-# R = Arvore.inserir(3, R)
-# R = Arvore.inserir(5, R)
-# R = Arvore.inserir(7, R)
-# R = Arvore.inserir(2, R)
-# R = Arvore.inserir(4, R)
-# R = Arvore.inserir(6, R)
-# R = Arvore.inserir(8, R)
-#
-# print("---InOrder---")
-# Arvore.in_order(R)
-# print("---PreOrder")
-# Arvore.pre_order(R)
-# print("---PosOrder")
-# Arvore.pos_order(R)
-
-
 def main(func):
     # executa em 1°
-    tree = Arvore()
+    tree = Arvore()  # carregando a Árvore
 
-    def intern_func(*args):
+    def intern_func(*args):  # execute passa a ser a função interna de main
         raiz = None
         # lendo os arquivos
         for arquivo in args:
@@ -229,27 +210,35 @@ sair -> para sair;
                 check_value = tree.find_no(raiz, valor)
                 if check_value:
                     print(f'{check_value.valor} foi encontrado nos arquivos: ')
-                    print(*[f"{k}: {v} vezes" for k, v in check_value.arquivos.items()], sep='\n')
+                    print(*[f"no {k} a palavra {valor} foi encontrada nas linhas {v}" for k, v in check_value.arquivos.items()], sep='\n')
                 else:
                     print('Valor não encontrado')
             elif opc == 'sair':
                 break
             # retornando a arvore
 
-        return tree
+        return tree, raiz
 
     # retornando a função interna e a repassando para execute
     return intern_func
 
 
-@main
-def execute(lista_arquivos: list|tuple) -> None:
+@main  # decorator:  chama antes de executar o funçao
+def execute(lista_arquivos: list | tuple) -> tuple:
     """
     :param lista_arquivos: busca os destinos do arquivo
-    :return: None
+    :return: Arvore
     """
     # executa em 3°
 
 
 if __name__ == '__main__':
-    execute(*file_dir)
+
+    # chamando execute e atribuindo us diretórios dos arquivos
+    tree, raiz = execute(*file_dir)  # retornando a Árvore
+
+    # executa por úitimo
+    print("\033[31mImprimindo a árvore em pre-ordem\033[m")
+    tree.pre_order(raiz)
+    print("\033[31mImprimindo em pós-ordem\033[m")
+    tree.pos_order(raiz)

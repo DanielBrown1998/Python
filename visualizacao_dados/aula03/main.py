@@ -5,7 +5,7 @@ import pandas as pd
 # from google.colab import files
 # files.upload()
 
-df = pd.read_csv(r'../Pandas/text')
+df = pd.read_csv(r'text')
 
 # para gráficos em linhas
 plt.subplot(3, 2, 1) #diz onde o gráfico vai ficar

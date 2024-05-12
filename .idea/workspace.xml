@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estrutura_de_dados_II/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/estrutura_de_dados_II/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualizacao_dados/aula02/aula02.png" beforeDir="false" afterPath="$PROJECT_DIR$/visualizacao_dados/aula02/aula02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualizacao_dados/aula03/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualizacao_dados/aula03/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intermediary/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/intermediary/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,66 +59,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for test.Test.test_soma_10_10_retorna_20.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test.TestCalculadora.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test.TestCalculadora.test_soma_10_10_retorna_20.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_calculadora.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula01 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula03.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula04.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula05.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula06.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula07.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula08.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula09.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula10.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula11.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula12.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula13.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula14.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula15.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aula16.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.delete.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio03.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio04.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio05.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio06.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio07.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio08.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio09.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exercicio10_main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.func_recursivas.executor&quot;: &quot;Run&quot;,
-    &quot;Python.greedy e non-greedy.executor&quot;: &quot;Run&quot;,
-    &quot;Python.grupos e retrovisores.executor&quot;: &quot;Run&quot;,
-    &quot;Python.intro.executor&quot;: &quot;Run&quot;,
-    &quot;Python.log.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (3).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.metacaracteres.executor&quot;: &quot;Run&quot;,
-    &quot;Python.metodo_aproximação_sucessivas.executor&quot;: &quot;Run&quot;,
-    &quot;Python.metodo_bisseccao (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.select.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Danie/Downloads/Atom_Material_Icons-95.0.0.zip&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python tests.Python tests for test.Test.test_soma_10_10_retorna_20.executor": "Run",
+    "Python tests.Python tests for test.TestCalculadora.executor": "Run",
+    "Python tests.Python tests for test.TestCalculadora.test_soma_10_10_retorna_20.executor": "Run",
+    "Python tests.Python tests in test.py.executor": "Run",
+    "Python tests.Python tests in test_calculadora.py.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.aula01 (1).executor": "Run",
+    "Python.aula01.executor": "Run",
+    "Python.aula02.executor": "Run",
+    "Python.aula03.executor": "Run",
+    "Python.aula04.executor": "Run",
+    "Python.aula05.executor": "Run",
+    "Python.aula06.executor": "Run",
+    "Python.aula07.executor": "Run",
+    "Python.aula08.executor": "Run",
+    "Python.aula09.executor": "Run",
+    "Python.aula10.executor": "Run",
+    "Python.aula11.executor": "Run",
+    "Python.aula12.executor": "Run",
+    "Python.aula13.executor": "Run",
+    "Python.aula14.executor": "Run",
+    "Python.aula15.executor": "Run",
+    "Python.aula16.executor": "Run",
+    "Python.data.executor": "Run",
+    "Python.delete.executor": "Run",
+    "Python.exercicio01.executor": "Run",
+    "Python.exercicio02.executor": "Run",
+    "Python.exercicio03.executor": "Run",
+    "Python.exercicio04.executor": "Run",
+    "Python.exercicio05.executor": "Run",
+    "Python.exercicio06.executor": "Run",
+    "Python.exercicio07.executor": "Run",
+    "Python.exercicio08.executor": "Run",
+    "Python.exercicio09.executor": "Run",
+    "Python.exercicio10_main.executor": "Run",
+    "Python.func_recursivas.executor": "Run",
+    "Python.greedy e non-greedy.executor": "Run",
+    "Python.grupos e retrovisores.executor": "Run",
+    "Python.intro.executor": "Run",
+    "Python.log.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main (2).executor": "Run",
+    "Python.main (3).executor": "Run",
+    "Python.main (4).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.metacaracteres.executor": "Run",
+    "Python.metodo_aproximação_sucessivas.executor": "Run",
+    "Python.metodo_bisseccao (1).executor": "Run",
+    "Python.select.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Danie/Downloads/Atom_Material_Icons-95.0.0.zip",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced\revisão\aula05" />
@@ -129,29 +128,7 @@
       <recent name="C:\Users\Danie\OneDrive\Documentos\GitHub\Python\advanced" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (3)">
-    <configuration name="aula08" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advanced/revisão" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advanced/revisão/aula08.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.main (4)">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
@@ -218,6 +195,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intermediary" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intermediary/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
@@ -264,11 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (4)" />
         <item itemvalue="Python.main (3)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main (2)" />
-        <item itemvalue="Python.aula08" />
       </list>
     </recent_temporary>
   </component>

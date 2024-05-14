@@ -16,88 +16,8 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="b0ad530b-f346-43a5-ba45-db8f8b5ebd44">
-      <console name="Udemy" type="STANDARD" schema="" session="Main"><![CDATA[create table if not exists ATOR(
- CodAtor numeric(3),
- NomeArtistico varchar(20) not null,
- Nome varchar(30) not null,
- Nacionalidade varchar(15),
- sexo varchar(1) check (sexo in ('m', 'f')), 
- idade numeric(3) not null,
- indicacaoOscar numeric(2),
- Oscar numeric(1),
- Primary key(CodAtor)
-);
-
-create table if not exists FILME (
-    CodFilme numeric(3),
-    NomeFilme varchar(20) not null,
-    AnoFilme varchar(20) not null,
-    Orcamento numeric(12, 2),
-    tempo date,
-    primary key(CodFilme)
-);
-
-create table if not exists PERSONAGEM (
-    CodFilme numeric(3),
-    CodAtor numeric(3),
-    Personagem varchar(20) not null,
-    Cache numeric(12, 2) not null,
-    foreign key(CodFilme) references FILME(CodFilme),
-    foreign key(CodAtor) references ATOR(CodAtor),
-    primary key(CodAtor, CodFilme)
-)
-
-create table if not exists PECA(
-    Pcodigo numeric(3),
-    nome_peca varchar(20),
-    cor varchar(20),
-    peso numeric(5)
-);
-
-create table if not exists PROJETO(
-    Jcodigo numeric(3),
-    nome_projeto varchar(20),
-    cidade_projeto varchar(30)
-);
-
-create table if not exists FORNECEDOR(
-    Fcodigo numeric(3),
-    nome_fornecedor varchar(20),
-    status boolean,
-    cidade varchar(30)
-
-);
-
-create table if not exists FORNECIMENTO(
-    Pcodigo numeric(3),
-    Fcodigo numeric(3),
-    Jcodigo numeric(3),
-    quantidade numeric(10),
-    primary key(Fcodigo, Jcodigo, Pcodigo),
-    foreign key(Fcodigo) references FORNECEDOR(Fcodigo),
-    foreign key(Jcodigo) references PROJETO(Jcodigo),
-    foreign key(Pcodigo) references PECA(Pcodigo)    
-);]]></console>
-    </connection>
-    <connection id="fac9476e-ead8-4a1c-b5fb-a3398a70513e">
-      <console name="mysql" type="STANDARD" schema="mysql" session="Main" />
-    </connection>
-    <connection id="939304fb-c123-424c-952b-1738dabbe348">
-      <console name="mysql_bd2" type="STANDARD" schema="poo2" session="Main"><![CDATA[create.table if not exists DEPTOS (
-codepto number(3) constrains dept_pm PRIMARY KEY, 
-nome char(30) not null
-);
-
-create.table  if not exists EMP (
-codemp number(3),
-nome char(20),
-datnasc date,
-sexo char(1) check (sexo ,
-salario numbes(10,2),
-codepto number(3),
-foreign key(codepto) references DEPTOS(codepto);
-);]]></console>
+    <connection id="f1529cf4-e5ae-4815-966f-e3a844cca4ab">
+      <console name="Udemy-Python" type="STANDARD" schema="main" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -107,11 +27,7 @@ foreign key(codepto) references DEPTOS(codepto);
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="b0ad530b-f346-43a5-ba45-db8f8b5ebd44" />
-    <connection id="fac9476e-ead8-4a1c-b5fb-a3398a70513e" />
-    <connection id="939304fb-c123-424c-952b-1738dabbe348">
-      <session name="poo2" id="9952e665-7b8a-4701-b494-d44e751cd121" />
-    </connection>
+    <connection id="f1529cf4-e5ae-4815-966f-e3a844cca4ab" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="939304fb-c123-424c-952b-1738dabbe348" dataset="mysql.customers" active-filter-id="" />
@@ -119,9 +35,6 @@ foreign key(codepto) references DEPTOS(codepto);
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
-  </component>
-  <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/banco_de_dados/db.sqlite3" connection-id="b0ad530b-f346-43a5-ba45-db8f8b5ebd44" session-id="MAIN" current-schema="main" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -142,10 +55,10 @@ foreign key(codepto) references DEPTOS(codepto);
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="b0ad530b-f346-43a5-ba45-db8f8b5ebd44" active="true" signed="true">
+      <connection id="f1529cf4-e5ae-4815-966f-e3a844cca4ab" active="true" signed="true">
         <database>
-          <name value="Udemy" />
-          <description value="curso da udemy" />
+          <name value="Udemy-Python" />
+          <description value="" />
           <database-type value="SQLITE" />
           <config-type value="BASIC" />
           <database-version value="3.44" />
@@ -167,194 +80,6 @@ foreign key(codepto) references DEPTOS(codepto);
         </database>
         <properties>
           <auto-commit value="true" />
-        </properties>
-        <ssh-settings>
-          <active value="false" />
-          <proxy-host value="" />
-          <proxy-port value="22" />
-          <proxy-user value="" />
-          <deprecated-proxy-pwd value="" />
-          <auth-type value="PASSWORD" />
-          <key-file value="" />
-          <key-passphrase value="" />
-        </ssh-settings>
-        <ssl-settings>
-          <active value="false" />
-          <certificate-authority-file value="" />
-          <client-certificate-file value="" />
-          <client-key-file value="" />
-        </ssl-settings>
-        <details>
-          <charset value="UTF-8" />
-          <session-management value="true" />
-          <ddl-file-binding value="true" />
-          <database-logging value="true" />
-          <connect-automatically value="true" />
-          <restore-workspace value="true" />
-          <restore-workspace-deep value="false" />
-          <environment-type value="default" />
-          <connectivity-timeout value="30" />
-          <idle-time-to-disconnect value="30" />
-          <idle-time-to-disconnect-pool value="5" />
-          <credential-expiry-time value="10" />
-          <max-connection-pool-size value="7" />
-          <alternative-statement-delimiter value="" />
-        </details>
-        <debugger>
-          <compile-dependencies value="true" />
-          <tcp-driver-tunneling value="false" />
-          <tcp-host-address value="" />
-          <tcp-port-from value="4000" />
-          <tcp-port-to value="4999" />
-          <debugger-type value="JDBC" />
-        </debugger>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false" hide-audit-columns="false">
-          <object-filters />
-          <object-type-filter use-master-settings="true">
-            <object-type name="SCHEMA" enabled="true" />
-            <object-type name="USER" enabled="true" />
-            <object-type name="ROLE" enabled="true" />
-            <object-type name="PRIVILEGE" enabled="true" />
-            <object-type name="CHARSET" enabled="true" />
-            <object-type name="TABLE" enabled="true" />
-            <object-type name="VIEW" enabled="true" />
-            <object-type name="MATERIALIZED_VIEW" enabled="true" />
-            <object-type name="NESTED_TABLE" enabled="true" />
-            <object-type name="COLUMN" enabled="true" />
-            <object-type name="INDEX" enabled="true" />
-            <object-type name="CONSTRAINT" enabled="true" />
-            <object-type name="DATASET_TRIGGER" enabled="true" />
-            <object-type name="DATABASE_TRIGGER" enabled="true" />
-            <object-type name="SYNONYM" enabled="true" />
-            <object-type name="SEQUENCE" enabled="true" />
-            <object-type name="PROCEDURE" enabled="true" />
-            <object-type name="FUNCTION" enabled="true" />
-            <object-type name="PACKAGE" enabled="true" />
-            <object-type name="TYPE" enabled="true" />
-            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
-            <object-type name="ARGUMENT" enabled="true" />
-            <object-type name="DIMENSION" enabled="true" />
-            <object-type name="CLUSTER" enabled="true" />
-            <object-type name="DBLINK" enabled="true" />
-          </object-type-filter>
-        </object-filters>
-      </connection>
-      <connection id="fac9476e-ead8-4a1c-b5fb-a3398a70513e" active="true" signed="true">
-        <database>
-          <name value="mysql" />
-          <description value="" />
-          <database-type value="MYSQL" />
-          <config-type value="BASIC" />
-          <database-version value="8.0" />
-          <driver-source value="BUNDLED" />
-          <driver-library value="" />
-          <driver value="" />
-          <url-type value="DATABASE" />
-          <host value="localhost" />
-          <port value="3306" />
-          <database value="mysql" />
-          <tns-folder value="" />
-          <tns-profile value="" />
-          <type value="USER_PASSWORD" />
-          <user value="root" />
-          <deprecated-pwd value="MTIzNA==" />
-        </database>
-        <properties>
-          <auto-commit value="false" />
-        </properties>
-        <ssh-settings>
-          <active value="false" />
-          <proxy-host value="" />
-          <proxy-port value="22" />
-          <proxy-user value="" />
-          <deprecated-proxy-pwd value="" />
-          <auth-type value="PASSWORD" />
-          <key-file value="" />
-          <key-passphrase value="" />
-        </ssh-settings>
-        <ssl-settings>
-          <active value="false" />
-          <certificate-authority-file value="" />
-          <client-certificate-file value="" />
-          <client-key-file value="" />
-        </ssl-settings>
-        <details>
-          <charset value="UTF-8" />
-          <session-management value="true" />
-          <ddl-file-binding value="true" />
-          <database-logging value="true" />
-          <connect-automatically value="true" />
-          <restore-workspace value="true" />
-          <restore-workspace-deep value="false" />
-          <environment-type value="default" />
-          <connectivity-timeout value="30" />
-          <idle-time-to-disconnect value="30" />
-          <idle-time-to-disconnect-pool value="5" />
-          <credential-expiry-time value="10" />
-          <max-connection-pool-size value="7" />
-          <alternative-statement-delimiter value="" />
-        </details>
-        <debugger>
-          <compile-dependencies value="true" />
-          <tcp-driver-tunneling value="false" />
-          <tcp-host-address value="" />
-          <tcp-port-from value="4000" />
-          <tcp-port-to value="4999" />
-          <debugger-type value="JDBC" />
-        </debugger>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false" hide-audit-columns="false">
-          <object-filters />
-          <object-type-filter use-master-settings="true">
-            <object-type name="SCHEMA" enabled="true" />
-            <object-type name="USER" enabled="true" />
-            <object-type name="ROLE" enabled="true" />
-            <object-type name="PRIVILEGE" enabled="true" />
-            <object-type name="CHARSET" enabled="true" />
-            <object-type name="TABLE" enabled="true" />
-            <object-type name="VIEW" enabled="true" />
-            <object-type name="MATERIALIZED_VIEW" enabled="true" />
-            <object-type name="NESTED_TABLE" enabled="true" />
-            <object-type name="COLUMN" enabled="true" />
-            <object-type name="INDEX" enabled="true" />
-            <object-type name="CONSTRAINT" enabled="true" />
-            <object-type name="DATASET_TRIGGER" enabled="true" />
-            <object-type name="DATABASE_TRIGGER" enabled="true" />
-            <object-type name="SYNONYM" enabled="true" />
-            <object-type name="SEQUENCE" enabled="true" />
-            <object-type name="PROCEDURE" enabled="true" />
-            <object-type name="FUNCTION" enabled="true" />
-            <object-type name="PACKAGE" enabled="true" />
-            <object-type name="TYPE" enabled="true" />
-            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
-            <object-type name="ARGUMENT" enabled="true" />
-            <object-type name="DIMENSION" enabled="true" />
-            <object-type name="CLUSTER" enabled="true" />
-            <object-type name="DBLINK" enabled="true" />
-          </object-type-filter>
-        </object-filters>
-      </connection>
-      <connection id="939304fb-c123-424c-952b-1738dabbe348" active="true" signed="true">
-        <database>
-          <name value="mysql_bd2" />
-          <description value="aula de bd2 2024.1" />
-          <database-type value="MYSQL" />
-          <config-type value="BASIC" />
-          <database-version value="8.0" />
-          <driver-source value="BUNDLED" />
-          <driver-library value="" />
-          <driver value="" />
-          <url-type value="DATABASE" />
-          <host value="127.0.0.1" />
-          <port value="3306" />
-          <database value="mysql" />
-          <tns-folder value="" />
-          <tns-profile value="" />
-          <type value="USER_PASSWORD" />
-          <user value="root" />
-          <deprecated-pwd value="MTIzNA==" />
-        </database>
-        <properties>
-          <auto-commit value="false" />
         </properties>
         <ssh-settings>
           <active value="false" />

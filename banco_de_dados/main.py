@@ -10,6 +10,7 @@ TABLE_NAME = 'customers'
 connection = sqlite3.connect(DB_FILE)
 cursor = connection.cursor()
 
+# cria tabela
 cursor.execute(
       f'CREATE TABLE IF NOT EXISTS {TABLE_NAME}'
           f'('
@@ -19,5 +20,22 @@ cursor.execute(
           f');'
 )
 connection.commit()
+# registrando valores
+my_data = "Rafaela", 26
+sql = f'INSERT INTO {TABLE_NAME} (name, idade) VALUES (?, ?);'
+cursor.execute(sql, my_data)
+connection.commit()
+
+opc = input('apagar tabela customers? [S/N] ').lower()
+while opc[0] not in 'SsNn' or opc.isspace() or opc in '':
+    opc = input('apagar tabela customers? [S/N] ').lower()
+
+if opc in 'Ss':
+    cursor.execute(
+        f'DELETE FROM {TABLE_NAME};'
+    )
+connection.commit()
+
+
 cursor.close()
 connection.close()

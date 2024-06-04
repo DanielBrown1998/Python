@@ -17,7 +17,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="f1529cf4-e5ae-4815-966f-e3a844cca4ab">
-      <console name="Udemy-Python" type="STANDARD" schema="main" session="Main" />
+      <console name="Udemy-Python" type="STANDARD" schema="main" session="Main"><![CDATA[select * from customers;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -158,6 +158,7 @@
         <display-mode value="TABBED" />
         <navigation-history-size value="100" />
         <show-object-details value="false" />
+        <enable-sticky-paths value="true" />
       </general>
       <filters>
         <object-type-filter>

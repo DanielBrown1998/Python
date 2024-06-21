@@ -116,32 +116,32 @@ class Grafo:
                         vertices_anteriores[ind] = u
 
 
-
-V = 10
-grau = 10
-meu_grafo = Grafo(V, grau)
-for i in range(V):
-    choices = []
-    from random import choice
-    for gr in range(choice(range(grau//2))):
-        escolhido_destino = choice(range(V))
-        while (i, escolhido_destino) in choices:
+if __name__ == '__main__':
+    V = 10
+    grau = 10
+    meu_grafo = Grafo(V, grau)
+    for i in range(V):
+        choices = []
+        from random import choice
+        for gr in range(choice(range(grau//2))):
             escolhido_destino = choice(range(V))
-        par = (i, escolhido_destino)
-        meu_grafo.insere_aresta(*par)
-        choices.append(par)
+            while (i, escolhido_destino) in choices:
+                escolhido_destino = choice(range(V))
+            par = (i, escolhido_destino)
+            meu_grafo.insere_aresta(*par)
+            choices.append(par)
 
 
-print(*meu_grafo.arestas, sep='\n')
-print("grau:", *meu_grafo.grau)
+    print(*meu_grafo.arestas, sep='\n')
+    print("grau:", *meu_grafo.grau)
 
-visitados: list[int] = []
-meu_grafo.busca_profundidade(5, visitados)
-print()
-meu_grafo.busca_largura(5, visitados)
-print()
-anteriores: list[int] = []
-distancias: list[float] = []
-meu_grafo.dijsktra(0, anteriores, distancias)
+    visitados: list[int] = []
+    meu_grafo.busca_profundidade(5, visitados)
+    print()
+    meu_grafo.busca_largura(5, visitados)
+    print()
+    anteriores: list[int] = []
+    distancias: list[float] = []
+    meu_grafo.dijsktra(0, anteriores, distancias)
 
 

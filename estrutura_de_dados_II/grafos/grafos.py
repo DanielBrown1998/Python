@@ -9,16 +9,16 @@ class Grafo:
         self.grau = [0]*self.num_vertices
 
     def insere_aresta(self, origem, destino, eh_digrafo: bool = False, peso: int = 1) -> int:
-        if origem < 0 or origem >= self.num_vertices or destino < 0 or destino >= self.num_vertices:
-            raise IndexError(f'insira números entre 0 e {len(self.num_vertices)-1} nos parâmetros origem e destino')
-        self.arestas[origem][destino] = 1
+        #if origem < 0 or origem >= self.num_vertices or destino < 0 or destino >= self.num_vertices:
+        #    raise IndexError("out index range")
+        self.arestas[origem][self.grau[origem]] = destino
         if self.eh_ponderado:
-            self.pesos[origem][destino] = peso
+            self.pesos[origem][self.grau[origem]] = peso
         self.grau[origem] += 1
         if not eh_digrafo:
-            self.arestas[destino][origem] = 1
+            self.arestas[self.grau[origem]][origem] = destino
             if self.eh_ponderado:
-                self.pesos[destino][origem] = peso
+                self.pesos[self.grau[origem]][origem] = peso
             self.grau[destino] += 1
         return 1
 
@@ -89,6 +89,7 @@ class Grafo:
                  distancia_inicial_ate_vertice: list[float]):
         cont = num_vertices = self.num_vertices
         vertices_visitados = [0]*num_vertices
+        soma = 0
         for i in range(num_vertices):
             distancia_inicial_ate_vertice.insert(i, -1)
             vertices_anteriores.insert(i, -1)
@@ -97,25 +98,26 @@ class Grafo:
         while cont > 0:
             u = self.procura_menor_distancia(distancia_inicial_ate_vertice, vertices_visitados, num_vertices)
             if u == -1:
-                print('grafo desconexo')
+                #print('grafo desconexo')
                 break
             vertices_visitados.insert(u, 1)
-            print(u)
+            #print(u, end='-')
             cont -= 1
             for i in range(self.grau[u]):
                 ind = self.arestas[u][i]
                 if distancia_inicial_ate_vertice[ind] < 0:
-                    distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u]+1
+                    #distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u]+1
+                    distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u] + self.pesos[u][i]
                     vertices_anteriores[ind] = u
-                    #distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u] + self.pesos[u][i]
-                elif distancia_inicial_ate_vertice[u] + 1 < distancia_inicial_ate_vertice[ind]:
-                #elif distancia_inicial_ate_vertice[ind] > distancia_inicial_ate_vertice[u] + 1:
-                        distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u]+1
-                        
-                        #distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u] + self.pesos[u][i]
+                #elif distancia_inicial_ate_vertice[u] + 1 < distancia_inicial_ate_vertice[ind]:
+                elif distancia_inicial_ate_vertice[ind] > distancia_inicial_ate_vertice[u] + 1:
+                        #distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u]+1
+                        distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u] + self.pesos[u][i]
                         vertices_anteriores[ind] = u
 
+        return vertices_anteriores
 
+#teste
 if __name__ == '__main__':
     V = 10
     grau = 10

@@ -43,7 +43,6 @@ class Grafo:
                 self.aux_profundidade(self.arestas[vertice_inicio][i], vertices_visitados, cont+1)
         print(vertice_inicio, end=' ')
 
-
     def busca_profundidade(self, vertice_inicio: int, vertices_visitados: list[int]):
         if vertice_inicio < 0 or vertice_inicio >= self.num_vertices:
             raise IndexError(f'{vertice_inicio} not in [0, {self.num_vertices-1}]')
@@ -71,79 +70,5 @@ class Grafo:
                     FF += 1
                     fila[FF] = self.arestas[vert][i]
                     vertice_visitados[self.arestas[vert][i]] = cont + 1
-
-    def procura_menor_distancia(self, distancia_inicial_ate_vertice: list[float],
-                                vertices_visitados: list[int], num_vertices: int)-> int:
-        menor_distancia = -1
-        primeiro = 1
-        for i in range(num_vertices):
-            if vertices_visitados[i] == 0 and distancia_inicial_ate_vertice[i] >=0:
-                if primeiro == 1:
-                    menor_distancia = distancia_inicial_ate_vertice[i]
-                    primeiro = 0
-                elif distancia_inicial_ate_vertice[menor_distancia] > distancia_inicial_ate_vertice[i]:
-                    menor_distancia = i
-        return menor_distancia  # indice do vértice com a menor distância
-
-    def dijsktra(self, vertice: int, vertices_anteriores: list[int], 
-                 distancia_inicial_ate_vertice: list[float]):
-        cont = num_vertices = self.num_vertices
-        vertices_visitados = [0]*num_vertices
-        soma = 0
-        for i in range(num_vertices):
-            distancia_inicial_ate_vertice.insert(i, -1)
-            vertices_anteriores.insert(i, -1)
-            vertices_visitados.insert(i, 0)
-        distancia_inicial_ate_vertice[vertice] = 0
-        while cont > 0:
-            u = self.procura_menor_distancia(distancia_inicial_ate_vertice, vertices_visitados, num_vertices)
-            if u == -1:
-                #print('grafo desconexo')
-                break
-            vertices_visitados.insert(u, 1)
-            #print(u, end='-')
-            cont -= 1
-            for i in range(self.grau[u]):
-                ind = self.arestas[u][i]
-                if distancia_inicial_ate_vertice[ind] < 0:
-                    #distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u]+1
-                    distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u] + self.pesos[u][i]
-                    vertices_anteriores[ind] = u
-                #elif distancia_inicial_ate_vertice[u] + 1 < distancia_inicial_ate_vertice[ind]:
-                elif distancia_inicial_ate_vertice[ind] > distancia_inicial_ate_vertice[u] + 1:
-                        #distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u]+1
-                        distancia_inicial_ate_vertice[ind] = distancia_inicial_ate_vertice[u] + self.pesos[u][i]
-                        vertices_anteriores[ind] = u
-
-        return vertices_anteriores
-
-#teste
-if __name__ == '__main__':
-    V = 10
-    grau = 10
-    meu_grafo = Grafo(V, grau)
-    for i in range(V):
-        choices = []
-        from random import choice
-        for gr in range(choice(range(grau//2))):
-            escolhido_destino = choice(range(V))
-            while (i, escolhido_destino) in choices:
-                escolhido_destino = choice(range(V))
-            par = (i, escolhido_destino)
-            meu_grafo.insere_aresta(*par)
-            choices.append(par)
-
-
-    print(*meu_grafo.arestas, sep='\n')
-    print("grau:", *meu_grafo.grau)
-
-    visitados: list[int] = []
-    meu_grafo.busca_profundidade(5, visitados)
-    print()
-    meu_grafo.busca_largura(5, visitados)
-    print()
-    anteriores: list[int] = []
-    distancias: list[float] = []
-    meu_grafo.dijsktra(0, anteriores, distancias)
-
-
+        return vertice_visitados
+#-----------------------FIM-CLASSE---------------------

@@ -28,7 +28,9 @@ connection.commit()
 # registrando valores
 my_data = "Rafaela", 26
 sql = f'INSERT INTO {TABLE_NAME} (name, idade) VALUES (?, ?);'
+#sql = f'INSERT INTO {TABLE_NAME} (name, idade) VALUES (:name, :idade);'
 cursor.execute(sql, my_data)
+#cursor.execute(sql, {'name': my_data[0], 'idade': my_data[1]})
 print(sql)
 connection.commit()
 
@@ -37,6 +39,8 @@ others_data = (('Daniel', 26), ('Dayse', 48), ('Marcelo', 53))
 cursor.executemany(sql, others_data)
 print(sql)
 connection.commit()
+
+
 
 
 opc = input('apagar tabela customers? [S/N] ').lower()

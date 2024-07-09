@@ -32,5 +32,5 @@ for c in range(total_meses):
         emprestimo_com_juros = 0
     print(f"parcela número {c+1}, faltam {total_meses-(c+1)}\n"
           f"vencimento: {datetime.strftime(data_de_requisicao_emprestimo, fmt)}\n"
-          f"valor a pagar: {pagamento_mensal}\n"
+          f"valor a pagar: R${pagamento_mensal}\n"
           f"valor do emprestimo a pagar: {round(emprestimo_com_juros, 2)}\n\n")

@@ -40,9 +40,6 @@ cursor.executemany(sql, others_data)
 print(sql)
 connection.commit()
 
-
-
-
 opc = input('apagar tabela customers? [S/N] ').lower()
 while opc[0] not in 'SsNn' or opc.isspace() or opc in '':
     opc = input('apagar tabela customers? [S/N] ').lower()

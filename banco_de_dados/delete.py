@@ -1,12 +1,13 @@
 from create import DB_FILE, TABLE_NAME
 import sqlite3
-DATA = []
+nome = 'Daniel'
+
 connection = sqlite3.connect(DB_FILE)
 cursor = connection.cursor()
-cursor.execute("SELECT * FROM " + TABLE_NAME)
-for row  in cursor.fetchall():
-    DATA.append(row)
-    print(*row)
+
+sql = f" DELETE FROM {TABLE_NAME} WHERE name = '{nome}'"
+row = cursor.execute(sql)
+
 connection.commit()
 cursor.close()
 connection.close()

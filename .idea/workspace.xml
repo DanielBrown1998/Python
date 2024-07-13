@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando POO">
-      <change afterPath="$PROJECT_DIR$/estrutura_de_dados_II/grafos/grafo_ponderado.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banco_de_dados/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/banco_de_dados/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estrutura_de_dados_II/grafos/grafos.py" beforeDir="false" afterPath="$PROJECT_DIR$/estrutura_de_dados_II/grafos/grafos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estrutura_de_dados_II/grafos/trabalho_av2.py" beforeDir="false" afterPath="$PROJECT_DIR$/estrutura_de_dados_II/grafos/trabalho_av2.py" afterDir="false" />
-    </list>
+    <list default="true" id="c782f472-63c8-4bcc-b7dc-39a169a31c8b" name="Changes" comment="estudando POO" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

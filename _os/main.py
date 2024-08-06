@@ -53,8 +53,8 @@ caminho_absoluto = os.path.abspath('./visualizacao_dados') # C:\Users\Danie\OneD
 
 # os + shutil -> copiar, mover e apagar diretórios
 
-# mover/renomear -> shutil.move / os.rename
-# copiar -> shutil.copy
+# mover/renomear (mesma coisa) -> shutil.move / os.rename
+# copiar -> shutil.copy / shutil.copytree (recursivamente)
 # apagar -> os.unlink / shutil.rmtree (recursivamente)
 
 HOME = os.path.expanduser('~') # caminho do usuário

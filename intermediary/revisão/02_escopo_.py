@@ -1,0 +1,1 @@
+#escopo_funções

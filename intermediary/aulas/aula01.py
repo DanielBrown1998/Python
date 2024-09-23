@@ -5,8 +5,8 @@ Por padrão funções em python retornam None!
 """
 
 
-def my_print(txt: str) -> None:
-    print(f"{txt.center(50)}")
+def my_print(txt: str, num=5) -> None:
+    print(f"{txt.center(num)}")
 
 
-my_print('Daniel Brown')
+my_print('Daniel Brown', num=10)

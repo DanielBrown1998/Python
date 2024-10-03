@@ -24,4 +24,5 @@ if __name__ == '__main__':
         'CÓDIGO PRINCIPAL'
     )
     print(f'{__name__}: CÓDIGO PRINCIPAL')
+    print(__file__)
 

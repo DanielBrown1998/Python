@@ -4,7 +4,7 @@
 
 import pathlib
 new_dir = pathlib.Path(__file__).parent.parent
-from modulos import modulo_principal, modulo_secundário
+from modulos import modulo_principal
 try:
     import sys
     sys.path.append(str(new_dir))

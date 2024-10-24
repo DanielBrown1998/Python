@@ -1,3 +1,6 @@
+from functools import total_ordering
+
+@total_ordering
 class ContaSalario:
     def __init__(self, codigo) -> None:
         self.codigo = codigo

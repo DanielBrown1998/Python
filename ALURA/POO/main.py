@@ -2,9 +2,7 @@ import os
 from typing import List
 import random
 
-nome_empresa = """
-            ｓａｂｏｒｅｓ ｅｘｐｒｅｓｓ
-        """
+nome_empresa = """ｓａｂｏｒｅｓ ｅｘｐｒｅｓｓ"""
 
 acoes = {
     1: "Cadastrar Restaurante",
@@ -14,6 +12,14 @@ acoes = {
 }
 
 restaurantes = []
+
+def titulo(msg):
+    """
+    Função para exibir um título centralizado
+    """
+    os.system("cls")
+    print(f"\033[1;32m {msg:^45} \033[m")
+    print(f"{' * ' * 20}\n")
 
 
 def in_put(msg: str, tipo: object) -> object:
@@ -36,54 +42,81 @@ def in_put(msg: str, tipo: object) -> object:
             print("Valor inválido")
 
 
-def des_ativar_restaurantes(restaurantes: List) -> None:
-    os.system("cls")
+def des_ativar_restaurantes(restaurantes: List) -> bool:
+    """
+    Função para desativar ou ativar um restaurante
 
-    print("""
-            𝕒𝕥𝕚𝕧𝕒𝕣/𝕕𝕖𝕤𝕒𝕥𝕚𝕧𝕒𝕣 𝕣𝕖𝕤𝕥𝕒𝕦𝕣𝕒𝕟𝕥𝕖𝕤
-          """)
-    print("OBS: se ativo, ao inserir o id, ele será desativado!")
+    :param restaurantes: List: Lista de restaurantes
+    :return: bool: True se o restaurante foi desativado, False se não
+    """
 
-    listar_restaurantes(restaurantes, all=True)
-    id = in_put("digite o id: ", int)
+    titulo("""𝕒𝕥𝕚𝕧𝕒𝕣/𝕕𝕖𝕤𝕒𝕥𝕚𝕧𝕒𝕣 𝕣𝕖𝕤𝕥𝕒𝕦𝕣𝕒𝕟𝕥𝕖𝕤""")
 
-    for restaurante in restaurantes:
-        if restaurante['id'] == id:
-            if restaurante['status']:
-                restaurante['status'] = False
-            else:
-                restaurante['status'] = True
+    if not restaurantes:
+        print("Nenhum restaurante cadastrado")
+        input("Aperte uma tecla para continuar: ")
+        return False
 
+    nome = in_put("digite o nome do restaurante: ", str)
+
+    try:
+        for restaurante in restaurantes:
+            if nome.lower() in restaurante['nome'].lower():
+                if restaurante['status']:
+                    print(f"Desativando {restaurante['nome']}")
+                else:
+                    print(f"Ativando {restaurante['nome']}")
+                restaurante['status'] = not restaurante['status']
+                break
+        else:
+            print("Restaurante não encontrado")
+
+        input("Aperte uma tecla para continuar: ")
+        
+        return restaurante['status']
+    except Exception as e:
+        print(f"Erro: {e.args}")
+        input("Aperte uma tecla para continuar: ")
+        return False
 
 def listar_restaurantes(restaurantes: List, all=False) ->  None:
-    os.system("cls")
-    print("""
-            𝕝𝕚𝕤𝕥𝕒𝕣 𝕣𝕖𝕤𝕥𝕒𝕦𝕣𝕒𝕟𝕥𝕖𝕤
-    """)
+    """
+    Função para listar os restaurantes cadastrados
+    :param restaurantes: List: Lista de restaurantes
+    :param all: bool: True para listar todos os restaurantes, False para listar apenas os ativos
+    """
+    titulo("""𝕝𝕚𝕤𝕥𝕒𝕣 𝕣𝕖𝕤𝕥𝕒𝕦𝕣𝕒𝕟𝕥𝕖𝕤""")
+    if not restaurantes:
+        print("Nenhum restaurante cadastrado")
+        input("Aperte uma tecla para continuar: ")
+        return
     if all:
-        for restaurante in restaurantes:
+        for e, restaurante in enumerate(restaurantes):
+            print(f"{e+1} ->", end=' ')
             for k, v in restaurante.items():
                 print(f"{k}, {v}", end = " |")
             print("\n")
 
     else:
-        for restaurante in restaurantes:
+        for e, restaurante in enumerate(restaurantes):
             if restaurante['status']:
                 for k, v in restaurante.items():
-                    if k != 'status':
-                        print(f"{k}: {v}", end = ' |')
+                    if k != 'id':
+                        print(f"{e+1} -> {k}: {v}", end = ' |')
             print("\n")
     
-
-def cadastro_restaurantes(restaurantes: List) -> List:
+    input("Aperte uma tecla para continuar: ")
     
+def cadastro_restaurantes(restaurantes: List) -> List:
+
+    """
+    Função para cadastrar um restaurante
+    :param restaurantes: List: Lista de restaurantes
+    :return: List: Lista de restaurantes atualizada
+    """
     restaurante_attr = {}
     
-    os.system("cls")
-
-    print("""
-            𝕔𝕒𝕕𝕒𝕤𝕥𝕣𝕒𝕣 𝕣𝕖𝕤𝕥𝕒𝕦𝕣𝕒𝕟𝕥𝕖
-    """)
+    titulo("""𝕔𝕒𝕕𝕒𝕤𝕥𝕣𝕒𝕣 𝕣𝕖𝕤𝕥𝕒𝕦𝕣𝕒𝕟𝕥𝕖""")
 
     restaurante_attr['id'] = int(random.randint(1, 1000000))
     restaurante_attr['nome'] = in_put("nome: ", str)
@@ -99,10 +132,14 @@ def cadastro_restaurantes(restaurantes: List) -> List:
     
 
 def main():
+    """
+    Função principal
+    """
+    
     opcao: int = 0
     while opcao != 4:
 
-        print(nome_empresa)
+        titulo(nome_empresa)
         print(*[f"{k}: {v}" for k, v in acoes.items()], sep='\n')
         opcao = in_put("Escolha uma opção: ", int)
         while opcao not in range(1, 5):

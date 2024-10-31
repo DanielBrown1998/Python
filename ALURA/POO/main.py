@@ -1,7 +1,11 @@
 import os
 from typing import List
-import random
-
+try:
+    from models.restaurante import Restaurante
+except ImportError as e:
+    print(f"Módulo não encontrado")
+    print(f"Erro: {e.args}")
+    exit(1)
 nome_empresa = """ｓａｂｏｒｅｓ ｅｘｐｒｅｓｓ"""
 
 acoes = {
@@ -11,9 +15,9 @@ acoes = {
     4: "Sair"
 }
 
-restaurantes = []
+restaurantes: List[Restaurante] = []
 
-def titulo(msg):
+def titulo(msg: str) -> None:
     """
     Função para exibir um título centralizado
     """
@@ -42,7 +46,7 @@ def in_put(msg: str, tipo: object) -> object:
             print("Valor inválido")
 
 
-def des_ativar_restaurantes(restaurantes: List) -> bool:
+def des_ativar_restaurantes(restaurantes: List[Restaurante]) -> bool:
     """
     Função para desativar ou ativar um restaurante
 
@@ -61,25 +65,24 @@ def des_ativar_restaurantes(restaurantes: List) -> bool:
 
     try:
         for restaurante in restaurantes:
-            if nome.lower() in restaurante['nome'].lower():
-                if restaurante['status']:
-                    print(f"Desativando {restaurante['nome']}")
+            if nome.lower() in restaurante.nome.lower() \
+                and len(nome) == len(restaurante.nome):
+                if restaurante.status:
+                    restaurante.desativar()
                 else:
-                    print(f"Ativando {restaurante['nome']}")
-                restaurante['status'] = not restaurante['status']
+                    restaurante.ativar()
                 break
         else:
             print("Restaurante não encontrado")
 
-        input("Aperte uma tecla para continuar: ")
-        
-        return restaurante['status']
+        input("Aperte uma tecla para continuar: ")        
+        return restaurante.status
     except Exception as e:
         print(f"Erro: {e.args}")
         input("Aperte uma tecla para continuar: ")
         return False
 
-def listar_restaurantes(restaurantes: List, all=False) ->  None:
+def listar_restaurantes(restaurantes: List[Restaurante], all=False) ->  None:
     """
     Função para listar os restaurantes cadastrados
     :param restaurantes: List: Lista de restaurantes
@@ -93,43 +96,44 @@ def listar_restaurantes(restaurantes: List, all=False) ->  None:
     if all:
         for e, restaurante in enumerate(restaurantes):
             print(f"{e+1} ->", end=' ')
-            for k, v in restaurante.items():
-                print(f"{k}, {v}", end = " |")
+            print(restaurante)
             print("\n")
 
     else:
         for e, restaurante in enumerate(restaurantes):
-            if restaurante['status']:
-                for k, v in restaurante.items():
-                    if k != 'id':
-                        print(f"{e+1} -> {k}: {v}", end = ' |')
-            print("\n")
+            if restaurante.status:
+                print(f"{e+1} ->", end=' ')
+                print(restaurante)
+                print("\n")
     
     input("Aperte uma tecla para continuar: ")
     
-def cadastro_restaurantes(restaurantes: List) -> List:
+def cadastro_restaurantes(restaurantes: List[Restaurante]) -> Restaurante:
 
     """
     Função para cadastrar um restaurante
     :param restaurantes: List: Lista de restaurantes
     :return: List: Lista de restaurantes atualizada
     """
-    restaurante_attr = {}
-    
+
     titulo("""𝕔𝕒𝕕𝕒𝕤𝕥𝕣𝕒𝕣 𝕣𝕖𝕤𝕥𝕒𝕦𝕣𝕒𝕟𝕥𝕖""")
 
-    restaurante_attr['id'] = int(random.randint(1, 1000000))
-    restaurante_attr['nome'] = in_put("nome: ", str)
-    restaurante_attr['endereço'] = in_put("endereço: ", str)
-    restaurante_attr['telefone'] = in_put("telefone com DDD (só números) | Ex: (21999999999): ", int)
-    while len(str(restaurante_attr['telefone'])) != 11: 
+    nome = in_put("nome: ", str)
+    endereco = in_put("endereço: ", str)
+    telefone = in_put("telefone com DDD (só números) | Ex: (21999999999): ", int)
+    while len(str(telefone)) != 11: 
         print("telefone inválido")
-        restaurante_attr['telefone'] = in_put("telefone com DDD (21999999999): ", int)
-    restaurante_attr['status'] = False
+        telefone = in_put("telefone com DDD (21999999999): ", int)
 
-    restaurantes.append(restaurante_attr)
+    restaurante = Restaurante(
+        nome=nome,
+        local=endereco,
+        telefone=[telefone]
+    )
+    restaurantes.append(restaurante)    
+    print(f"Restaurante {nome} cadastrado com sucesso!")
+    input("Aperte uma tecla para continuar: ")
     return restaurantes
-    
 
 def main():
     """

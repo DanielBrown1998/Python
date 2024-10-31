@@ -1,11 +1,11 @@
 from typing import List
-from random import random
+import random
 
 class Restaurante:
     def __init__(self, nome: str, local: str, telefone: List) -> None:
-        self.nome = nome
+        self.nome = nome.title().strip()
         self.status = False
-        self.endereco = local
+        self.endereco = local.strip().capitalize()
         self.telefone = []
         for tel in telefone:
             self.telefone.append(tel)
@@ -17,14 +17,16 @@ class Restaurante:
     def __repr__(self) -> str:
         return f"Nome: {self.nome}, Endereço: {self.endereco}, Telefone(s): {self.telefone}, Status: {'ativo' if self.status else 'inativo'}"
     
-    def ativar(self) -> None:
+    def ativar(self) -> bool:
         self.status = True
         print(f"Restaurante {self.nome} ativado com sucesso!")
+        return self.status
 
     
-    def desativar(self) -> None:
+    def desativar(self) -> bool:
         self.status = False
         print(f"Restaurante {self.nome} desativado com sucesso!")
+        return self.status
 
     def editar(self, nome: str, local: str, telefone: List) -> None:
         self.nome = nome
@@ -37,3 +39,4 @@ class Restaurante:
     @property
     def id(self):
         return self._id
+

@@ -12,7 +12,9 @@ acoes = {
     1: "Cadastrar Restaurante",
     2: "Listar Restaurantes",
     3: "(Des)Ativar Restaurante",
-    4: "Sair"
+    4: "Inserir Avaliação",
+    5: "Listar Avaliações",
+    6: "Sair"
 }
 
 restaurantes: List[Restaurante] = []
@@ -24,7 +26,6 @@ def titulo(msg: str) -> None:
     os.system("cls")
     print(f"\033[1;32m {msg:^45} \033[m")
     print(f"{' * ' * 20}\n")
-
 
 def in_put(msg: str, tipo: object) -> object:
     """
@@ -45,7 +46,18 @@ def in_put(msg: str, tipo: object) -> object:
         except ValueError:
             print("Valor inválido")
 
-
+def buscar_restaurante(nome):
+    """
+    Função para buscar um restaurante
+    """
+    for restaurante in restaurantes:
+        if nome.lower() in restaurante.nome.lower() \
+            and len(nome) == len(restaurante.nome):
+            return restaurante
+        else:
+            print("Restaurante não encontrado")
+            return 
+    
 def des_ativar_restaurantes(restaurantes: List[Restaurante]) -> bool:
     """
     Função para desativar ou ativar um restaurante
@@ -64,18 +76,15 @@ def des_ativar_restaurantes(restaurantes: List[Restaurante]) -> bool:
     nome = in_put("digite o nome do restaurante: ", str)
 
     try:
-        for restaurante in restaurantes:
-            if nome.lower() in restaurante.nome.lower() \
-                and len(nome) == len(restaurante.nome):
-                if restaurante.status:
-                    restaurante.desativar()
-                else:
-                    restaurante.ativar()
-                break
-        else:
-            print("Restaurante não encontrado")
-
+        restaurante = buscar_restaurante(nome)
         input("Aperte uma tecla para continuar: ")        
+        if not restaurante:
+            return False
+        print(restaurante.nome + "encontrado")
+        if restaurante.status:
+            restaurante.desativar()
+        else:
+            restaurante.ativar()
         return restaurante.status
     except Exception as e:
         print(f"Erro: {e.args}")
@@ -105,9 +114,7 @@ def listar_restaurantes(restaurantes: List[Restaurante], all=False) ->  None:
                 print(f"{e+1} ->", end=' ')
                 print(restaurante)
                 print("\n")
-    
-    input("Aperte uma tecla para continuar: ")
-    
+        
 def cadastro_restaurantes(restaurantes: List[Restaurante]) -> Restaurante:
 
     """
@@ -141,12 +148,13 @@ def main():
     """
     
     opcao: int = 0
-    while opcao != 4:
+    LIM = 6
+    while opcao != LIM:
 
         titulo(nome_empresa)
         print(*[f"{k}: {v}" for k, v in acoes.items()], sep='\n')
         opcao = in_put("Escolha uma opção: ", int)
-        while opcao not in range(1, 5):
+        while opcao not in range(1, LIM+1):
             print("Opção inválida")
             opcao = in_put("Escolha uma opção: ", int)
 
@@ -155,17 +163,42 @@ def main():
             
         elif opcao == 2:
             listar_restaurantes(restaurantes)
+            input("Aperte uma tecla para continuar: ")
 
         elif opcao == 3:
             des_ativar_restaurantes(restaurantes)
-
         elif opcao == 4:
+            nome = in_put(
+                "Digite seu nome: ", str
+            )
+            listar_restaurantes(restaurantes, all=True)
+            nome_restaurante = in_put("Digite o nome do restaurante: ", str)
+            restaurante = buscar_restaurante(nome_restaurante)
+            if not restaurante:
+                input("Aperte uma tecla para continuar: ")
+                continue
+            nota = in_put("Digite a nota: ", float)
+            comentario = in_put("Digite o comentário: ", str)
+            restaurante.adicionar_avaliacao(nome, restaurante, nota, comentario)
+            input("Aperte uma tecla para continuar: ")
+
+        elif opcao == 5:
+            listar_restaurantes(restaurantes, all=True)
+            nome_restaurante = in_put("Digite o nome do restaurante: ", str)
+            restaurante = buscar_restaurante(nome_restaurante)
+            if not restaurante:
+                input("Aperte uma tecla para continuar: ")
+                continue
+            for avaliacao in restaurante.avaliacoes:
+                print(f"{avaliacao.restaurante}\n{avaliacao.usuario}\n{avaliacao.nota}\n{avaliacao.avaliacao}")
+                input("Aperte uma tecla para continuar: ")
+
+        elif opcao == 6:
             os.system("cls")
             print("""
                 𝕒𝕥𝕖́ 𝕞𝕒𝕚𝕤...
     """) 
             break
-
 
 if __name__ == '__main__':
     main()

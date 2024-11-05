@@ -1,11 +1,13 @@
 from typing import List
 import random
+from models.avaliacao import Avaliacao
 
 class Restaurante:
     def __init__(self, nome: str, local: str, telefone: List) -> None:
         self.nome = nome.title().strip()
         self.status = False
         self.endereco = local.strip().capitalize()
+        self.avaliacoes: List[Avaliacao] = []
         self.telefone = []
         for tel in telefone:
             self.telefone.append(tel)
@@ -22,20 +24,16 @@ class Restaurante:
         print(f"Restaurante {self.nome} ativado com sucesso!")
         return self.status
 
-    
     def desativar(self) -> bool:
         self.status = False
         print(f"Restaurante {self.nome} desativado com sucesso!")
         return self.status
 
-    def editar(self, nome: str, local: str, telefone: List) -> None:
-        self.nome = nome
-        self.endereco = local
-        self.telefone = []
-        for tel in telefone:
-            self.telefone.append(tel)
-        print(f"Restaurante {self.nome} editado com sucesso!")
-
+    def adicionar_avaliacao(self, nome: str, restaurante, nota: float, comentario: str) -> None:
+        avaliacao = Avaliacao(nome, restaurante, nota, comentario)
+        self.avaliacoes.append(avaliacao)
+        print(f"Avaliação adicionada com sucesso!")
+        
     @property
     def id(self):
         return self._id

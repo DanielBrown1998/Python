@@ -53,6 +53,7 @@ def buscar_restaurante(nome):
     for restaurante in restaurantes:
         if nome.lower() in restaurante.nome.lower() \
             and len(nome) == len(restaurante.nome):
+            print(f"{restaurante.nome} encontrado")
             return restaurante
         else:
             print("Restaurante não encontrado")
@@ -77,14 +78,15 @@ def des_ativar_restaurantes(restaurantes: List[Restaurante]) -> bool:
 
     try:
         restaurante = buscar_restaurante(nome)
-        input("Aperte uma tecla para continuar: ")        
         if not restaurante:
             return False
-        print(restaurante.nome + "encontrado")
         if restaurante.status:
             restaurante.desativar()
+            print(f"Restaurante {restaurante.nome} desativado")
         else:
             restaurante.ativar()
+            print(f"Restaurante {restaurante.nome} ativado")
+        input("Aperte uma tecla para continuar: ")        
         return restaurante.status
     except Exception as e:
         print(f"Erro: {e.args}")
@@ -187,11 +189,15 @@ def main():
             nome_restaurante = in_put("Digite o nome do restaurante: ", str)
             restaurante = buscar_restaurante(nome_restaurante)
             if not restaurante:
+                print(f"Restaurante não encontrado!")
                 input("Aperte uma tecla para continuar: ")
                 continue
+            print(f"Avaliações do {restaurante.nome}")
+            print("=="*20)
             for avaliacao in restaurante.avaliacoes:
-                print(f"{avaliacao.restaurante}\n{avaliacao.usuario}\n{avaliacao.nota}\n{avaliacao.avaliacao}")
-                input("Aperte uma tecla para continuar: ")
+                print(f"Usuario: {avaliacao.usuario}\n nota: {avaliacao.nota}\n comentário: {avaliacao.avaliacao}")
+                print("=="*20)
+            input("Aperte uma tecla para continuar: ")
 
         elif opcao == 6:
             os.system("cls")

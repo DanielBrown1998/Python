@@ -1,6 +1,8 @@
 from typing import List
 import random
 from models.avaliacao import Avaliacao
+from models.prato import Prato
+from models.bebida import Bebida
 
 class Restaurante:
     def __init__(self, nome: str, local: str, telefone: List) -> None:
@@ -9,6 +11,8 @@ class Restaurante:
         self.endereco = local.strip().capitalize()
         self.avaliacoes: List[Avaliacao] = []
         self.telefone = []
+        self.pratos: List[Prato] = []
+        self.bebidas: List[Bebida] = []
         for tel in telefone:
             self.telefone.append(tel)
         self._id = int(random.randint(1, 1000000))
@@ -34,6 +38,14 @@ class Restaurante:
         self.avaliacoes.append(avaliacao)
         print(f"Avaliação adicionada com sucesso!")
         
+    def adicionar_prato(self, prato: Prato) -> None:
+        self.pratos.append(prato)
+        print(f"Prato {prato.nome} adicionado com sucesso!")
+    
+    def adicionar_bebida(self, bebida: Bebida) -> None:
+        self.bebidas.append(bebida)
+        print(f"Bebida {bebida.nome} adicionada com sucesso!")
+
     @property
     def id(self):
         return self._id

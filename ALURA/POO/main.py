@@ -2,6 +2,8 @@ import os
 from typing import List
 try:
     from models.restaurante import Restaurante
+    from models.prato import Prato
+    from models.bebida import Bebida
 except ImportError as e:
     print(f"Módulo não encontrado")
     print(f"Erro: {e.args}")
@@ -14,7 +16,9 @@ acoes = {
     3: "(Des)Ativar Restaurante",
     4: "Inserir Avaliação",
     5: "Listar Avaliações",
-    6: "Sair"
+    6: "cadastrar cardápio",
+    7: "listar cardápio",
+    8: "Sair"
 }
 
 restaurantes: List[Restaurante] = []
@@ -144,11 +148,88 @@ def cadastro_restaurantes(restaurantes: List[Restaurante]) -> Restaurante:
     input("Aperte uma tecla para continuar: ")
     return restaurantes
 
+def inserir_cardapio(restaurantes: List[Restaurante]) -> None:
+    """
+    Função para inserir um item no cardápio
+    :param restaurantes: List: Lista de restaurantes
+    """
+    titulo("""𝕚𝕟𝕤𝕖𝕣𝕚𝕣 𝕔𝕒𝕣𝕕𝕒𝕡𝕚𝕠""")
+    if not restaurantes:
+        print("Nenhum restaurante cadastrado")
+        input("Aperte uma tecla para continuar: ")
+        return
+
+    nome = in_put("Digite o nome do restaurante: ", str)
+    restaurante = buscar_restaurante(nome)
+    if not restaurante:
+        print("Restaurante não encontrado")
+        input("Aperte uma tecla para continuar: ")
+        return
+
+    tipo = in_put("Digite o tipo do item (bebida ou prato): ", str)
+    while tipo.lower() not in ["bebida", "prato"]:
+        print("Tipo inválido")
+        tipo = in_put("Digite o tipo do item (bebida ou prato): ", str)
+
+    nome = in_put("Digite o nome do item: ", str)
+    preco = in_put("Digite o preço do item: ", float)
+    descricao = in_put("Digite a descrição do item: ", str)
+
+    if tipo.lower() == "bebida":
+        bebida = Bebida(nome, preco, descricao)
+        restaurante.adicionar_bebida(bebida)
+    elif tipo.lower() == "prato":
+        prato = Prato(nome, preco, descricao)
+        restaurante.adicionar_prato(prato)
+    else:
+        print("Tipo inválido")
+        input("Aperte uma tecla para continuar: ")
+
+    input("Aperte uma tecla para continuar: ")
+
+def listar_cardapio(restaurantes: List[Restaurante]) -> None:
+    """
+    Função para listar o cardápio de um restaurante
+    :param restaurantes: List: Lista de restaurantes
+    """
+    titulo("""𝕝𝕚𝕤𝕥𝕒𝕣 𝕔𝕒𝕣𝕕á𝕡𝕚𝕠""")
+    if not restaurantes:
+        print("Nenhum restaurante cadastrado")
+        input("Aperte uma tecla para continuar: ")
+        return
+
+    nome = in_put("Digite o nome do restaurante: ", str)
+    restaurante = buscar_restaurante(nome)
+    if not restaurante:
+        print("Restaurante não encontrado")
+        input("Aperte uma tecla para continuar: ")
+        return
+
+    print(f"Cardápio do {restaurante.nome}")
+    print("=="*20)
+    if restaurante.pratos == []:
+        print("Sem pratos")
+    else:
+        print("Pratos")
+        print("=="*20)
+        for prato in restaurante.pratos:
+            print(f"Nome: {prato.nome}\n Preço: {prato.preco}\n Descrição: {prato.descricao}")
+            print("=="*20)
+
+    if restaurante.bebidas == []:
+        print("Sem bebidas")
+    else:
+        print("Bebidas")
+        print("=="*20)
+        for bebida in restaurante.bebidas:
+            print(f"Nome: {bebida.nome}\n Preço: {bebida.preco}\n Descrição: {bebida.descricao}")
+            print("=="*20)
+    input("Aperte uma tecla para continuar: ")
+
 def main():
     """
     Função principal
     """
-    
     opcao: int = 0
     LIM = 6
     while opcao != LIM:
@@ -207,6 +288,12 @@ def main():
             input("Aperte uma tecla para continuar: ")
 
         elif opcao == 6:
+            inserir_cardapio(restaurantes)
+            
+        elif opcao == 7:
+            listar_cardapio(restaurantes)
+
+        elif opcao == 8:
             os.system("cls")
             print("""
                 𝕒𝕥𝕖́ 𝕞𝕒𝕚𝕤...

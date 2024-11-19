@@ -180,6 +180,9 @@ def main():
                 input("Aperte uma tecla para continuar: ")
                 continue
             nota = in_put("Digite a nota: ", float)
+            while nota not in range(0, 6):
+                print("Nota entre 0 e 5, por favor")
+                nota = in_put("Digite a nota: ", float)
             comentario = in_put("Digite o comentário: ", str)
             restaurante.adicionar_avaliacao(nome, restaurante, nota, comentario)
             input("Aperte uma tecla para continuar: ")
@@ -194,6 +197,10 @@ def main():
                 continue
             print(f"Avaliações do {restaurante.nome}")
             print("=="*20)
+            if restaurante.avaliacoes == []:
+                print("Sem avaliações")
+                input("Aperte uma tecla para continuar: ")
+                continue
             for avaliacao in restaurante.avaliacoes:
                 print(f"Usuario: {avaliacao.usuario}\n nota: {avaliacao.nota}\n comentário: {avaliacao.avaliacao}")
                 print("=="*20)

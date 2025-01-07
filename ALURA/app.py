@@ -1,4 +1,12 @@
 import requests
+import json
+from pathlib import Path
+
+LOCAL_RESTAURANTES = Path(__file__).parent / 'restaurantes/'
+print(LOCAL_RESTAURANTES)
+
+# Criação de diretório para armazenar os arquivos JSON
+
 
 url = 'https://guilhermeonrails.github.io/api-restaurantes/restaurantes.json'
 response = requests.get(url)
@@ -10,13 +18,15 @@ if response.status_code == 200:
                 'Item': [restaurante['Item']],
                 'Preço': [restaurante['price']],
                 'description': [restaurante['description']]
-
             }
         if restaurante['Company'] not in dados_restaurante:
             dados_restaurante[restaurante['Company']] = [dados]
             continue
         dados_restaurante[restaurante['Company']].append(dados)
     for empresa, dados in dados_restaurante.items():
+        nome_empresa = f"{empresa.split(' ')[0]}.json"
+        with open(LOCAL_RESTAURANTES / nome_empresa, 'w') as file:
+            json.dump(dados, file)
         for dado in dados:
             print(f' {empresa} => Item: {dado["Item"]} | Preço: {dado["Preço"]} | Descrição: {dado["description"]}')
             print()

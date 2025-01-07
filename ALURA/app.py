@@ -2,10 +2,10 @@ import requests
 import json
 from pathlib import Path
 
+# Criação de diretório para armazenar os arquivos JSON
 LOCAL_RESTAURANTES = Path(__file__).parent / 'restaurantes/'
 print(LOCAL_RESTAURANTES)
 
-# Criação de diretório para armazenar os arquivos JSON
 
 
 url = 'https://guilhermeonrails.github.io/api-restaurantes/restaurantes.json'

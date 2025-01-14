@@ -29,6 +29,6 @@ if response.status_code == 200:
             json.dump(dados, file)
         for dado in dados:
             print(f' {empresa} => Item: {dado["Item"]} | Preço: {dado["Preço"]} | Descrição: {dado["description"]}')
-            print()
+            print("_"*30)
 else:
     print('Erro ao acessar a API de restaurantes')

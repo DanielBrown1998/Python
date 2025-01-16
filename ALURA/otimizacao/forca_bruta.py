@@ -4,7 +4,7 @@ from typing import List, Tuple
 from itertools import permutations
 from valores import destino, enderecos, origem
 # resolução do problema via força bruta
-def desenhar_rota(origem: Tuple[int], destino: Tuple[int], enderecos: List[Tuple[int]], show=False):
+def desenhar_rota(origem: Tuple[int], destino: Tuple[int], enderecos: List[Tuple[int]], show=False) -> Tuple:
     #validacao de origme e destino
     if len(origem) != 2:
         raise ValueError(f"{origem} não tem 2 argumentos")
@@ -62,10 +62,10 @@ def desenhar_rota(origem: Tuple[int], destino: Tuple[int], enderecos: List[Tuple
         plt.title(f"distância da rota: {round(distancia_percorrida, 2)}")
         plt.show()
 
-    return distancia_percorrida, rota
+    return rota, distancia_percorrida
 
 
 if __name__ == "__main__":
     
-    tam, rota = desenhar_rota(origem, destino, enderecos, show=True)
+    rota, tam = desenhar_rota(origem, destino, enderecos, show=True)
     print(tam, rota)

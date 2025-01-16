@@ -3,8 +3,8 @@ from scipy.spatial.distance import euclidean as distance_euclidean
 from typing import List, Tuple
 from valores import destino, origem, enderecos
 
-
-def heuristica(origem: Tuple, destino: Tuple, enderecos: List[Tuple[int]], show=False):
+# algoritmo guloso
+def heuristica(origem: Tuple, destino: Tuple, enderecos: List[Tuple[int]], show=False) -> Tuple:
     ponto_atual = origem
     enderecos_restantes = enderecos.copy()
     menor_rota = [ponto_atual]
@@ -30,6 +30,9 @@ def heuristica(origem: Tuple, destino: Tuple, enderecos: List[Tuple[int]], show=
         #atualiza o ponto
         ponto_anterior = ponto_atual
         ponto_atual = ponto_prov
+
+    # adicionando o último ponto
+    distancia_percorrida += distance_euclidean(ponto_atual, destino)
     menor_rota.append(destino)
     
     if show:
@@ -49,9 +52,10 @@ def heuristica(origem: Tuple, destino: Tuple, enderecos: List[Tuple[int]], show=
                 dy = y1 - y
                 plt.arrow(x, y, dx, dy, color="black", head_width=.1)
         
+        plt.title(f"ditancia percorrida: {distancia_percorrida}")
         plt.show()
 
-    return menor_rota, distancia_percorrida
+    return menor_rota, round(distancia_percorrida, 2)
 
 
 if __name__ == "__main__":

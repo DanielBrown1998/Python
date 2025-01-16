@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from scipy.spatial.distance import euclidean as distance_euclidean
 from typing import List, Tuple
 from itertools import permutations
-
+from valores import destino, enderecos, origem
 # resolução do problema via força bruta
 def desenhar_rota(origem: Tuple[int], destino: Tuple[int], enderecos: List[Tuple[int]], show=False):
     #validacao de origme e destino
@@ -66,8 +66,6 @@ def desenhar_rota(origem: Tuple[int], destino: Tuple[int], enderecos: List[Tuple
 
 
 if __name__ == "__main__":
-    enderecos = [(2, 1), (2, 2), (8, 3), (5, 3)]
-    origem = 0, 0
-    destino = 4, 4
+    
     tam, rota = desenhar_rota(origem, destino, enderecos, show=True)
     print(tam, rota)

@@ -16,7 +16,13 @@ def avaliacao(individuo: List[int], origem: Tuple[int], enderecos: List[Tuple[in
 
     return distancia_percorrida, 
 
-def algoritmos_geneticos(origem: Tuple[int], enderecos: List[Tuple[int]], destino: Tuple[int], tam_populacao_inicial: int, prob_cruzamento: float, prob_mutacao: float, num_geracoes: int) -> Tuple:
+def algoritmos_geneticos(origem: Tuple[int], 
+                         enderecos: List[Tuple[int]], 
+                         destino: Tuple[int], 
+                         tam_populacao_inicial: int = 100, 
+                         prob_cruzamento: float = .7, 
+                         prob_mutacao: float = .1, 
+                         num_geracoes: int = 100) -> Tuple:
 
     creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
     creator.create("Individuo", list, fitness=creator.FitnessMin)
@@ -38,7 +44,7 @@ def algoritmos_geneticos(origem: Tuple[int], enderecos: List[Tuple[int]], destin
         toolbox, 
         cxpb=prob_cruzamento,
         mutpb=prob_cruzamento,
-        ngen=numero_geracoes, 
+        ngen=num_geracoes, 
         verbose=False
     )
 
@@ -49,11 +55,5 @@ def algoritmos_geneticos(origem: Tuple[int], enderecos: List[Tuple[int]], destin
     return melhor_rota, avaliacao(melhor_ind, origem, enderecos, destino) 
 
 if __name__ == "__main__":
-    tam_populacao_inicial = 100
-    prob_cruzamento =.7
-    prob_mutacao = .1
-    numero_geracoes = 100
-
-    melhor_rota, distancia = algoritmos_geneticos(origem, enderecos, destino, tam_populacao_inicial, prob_cruzamento, prob_mutacao, numero_geracoes)
-
+    melhor_rota, distancia = algoritmos_geneticos(origem, enderecos, destino)
     print(melhor_rota, distancia)

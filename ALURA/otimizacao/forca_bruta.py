@@ -3,7 +3,7 @@ from scipy.spatial.distance import euclidean as distance_euclidean
 from typing import List, Tuple
 from itertools import permutations
 
-
+# resolução do problema via força bruta
 def desenhar_rota(origem: Tuple[int], destino: Tuple[int], enderecos: List[Tuple[int]], show=False):
     #validacao de origme e destino
     if len(origem) != 2:
@@ -52,20 +52,22 @@ def desenhar_rota(origem: Tuple[int], destino: Tuple[int], enderecos: List[Tuple
         if e < len(rota)-1:
             x1, y1 = rota[e+1]
             distancia_percorrida += distance_euclidean(rota[e], rota[e+1])
+            # desenhando os vetores
             if show:
                 dx = x1 - x
                 dy = y1 - y
                 plt.arrow(x, y, dx, dy, color="black", head_width=.1)
+    # plotando o gráfico
     if show:
         plt.title(f"distância da rota: {round(distancia_percorrida, 2)}")
         plt.show()
 
     return distancia_percorrida, rota
 
-enderecos = [(2, 1), (2, 2), (8, 3), (5, 3)]
 
-origem = 0, 0
-destino = 4, 4
-
-tam, rota = desenhar_rota(origem, destino, enderecos, show=True)
-print(tam, rota)
+if __name__ == "__main__":
+    enderecos = [(2, 1), (2, 2), (8, 3), (5, 3)]
+    origem = 0, 0
+    destino = 4, 4
+    tam, rota = desenhar_rota(origem, destino, enderecos, show=True)
+    print(tam, rota)

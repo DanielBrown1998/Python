@@ -1,6 +1,7 @@
 from valores import origem, destino, enderecos
 import grafos
 import sysconfig
+import ortools
 
 if 3.8 <= float(sysconfig.get_config_vars()['py_version_short']) <= 3.11:
     try:
@@ -42,7 +43,7 @@ def prog_math():
 
     STATUS = modelo.Solve()
     
-    if STATUS == pwlp.OPTIMAL:
+    if STATUS == pwlp.OPTIMAL or STATUS == pwlp.FEASIBLE:
         melhor_rota = [origem]
         i = "origem"
         while i != "destino":

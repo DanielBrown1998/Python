@@ -1,6 +1,4 @@
-#Lucro por quiilo de cada tipo de alimento
-
-
+#Lucro por quilo de cada tipo de alimento
 lucro_por_tipo = {
     'tomate': 2.00,
     'alface': 1.50,
@@ -16,7 +14,6 @@ disponibilidade_recursos = {
     'espaco': 5400
 }
 
-
 max_tomate = min(
     disponibilidade_recursos['agua']/demanda_por_tipo['tomate']['agua'],
     disponibilidade_recursos['espaco']/demanda_por_tipo['tomate']['espaco']
@@ -26,7 +23,6 @@ max_alface = min(
     disponibilidade_recursos['agua']/demanda_por_tipo['alface']['agua'],
     disponibilidade_recursos['espaco']/demanda_por_tipo['alface']['espaco']
 )
-
 
 
 def calcular_lucro_e_viabilidade(qtd_tomate, qtd_alface):
@@ -51,5 +47,22 @@ def calcular_lucro_e_viabilidade(qtd_tomate, qtd_alface):
 
 
 if __name__ == '__main__':
-    print(calcular_lucro_e_viabilidade(16, 0))
+
+    lista_solucoes = []
+
+
+    for qtd_tomate in range(0, int(max_tomate+1), 100):
+        for qtd_alface in range(0, int(max_alface), 100):
+            lucro, viola, restricoes = calcular_lucro_e_viabilidade(qtd_tomate, qtd_alface)
+            if not viola:
+                lista_solucoes.append([qtd_tomate, qtd_alface, lucro, viola, restricoes])
+                # print(f'Tomate: {qtd_tomate} kg, Alface: {qtd_alface} kg, Lucro: R$ {lucro:.2f}')
+
+    max_lucro = max([lucro for _, _, lucro, _, _ in lista_solucoes])
+    # print(max_lucro)
+    melhor_solucao = [item for item in lista_solucoes if item[2] == max_lucro][0]
+    # print(melhor_solucao)
+    print(f'Tomate: {melhor_solucao[0]} kg, Alface: {melhor_solucao[1]} kg, Lucro: R$ {melhor_solucao[2]:.2f}')
+
+
     

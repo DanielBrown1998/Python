@@ -1,3 +1,4 @@
+
 #Lucro por quilo de cada tipo de alimento
 lucro_por_tipo = {
     'tomate': 2.00,
@@ -10,8 +11,8 @@ demanda_por_tipo = {
 }
 
 disponibilidade_recursos = {
-    'agua': 5900,
-    'espaco': 5400
+    'agua': 6000,
+    'espaco': 5500
 }
 
 max_tomate = min(
@@ -44,6 +45,9 @@ def calcular_lucro_e_viabilidade(qtd_tomate, qtd_alface):
     lucro = qtd_tomate*lucro_por_tipo['tomate']+qtd_alface*lucro_por_tipo['alface']
 
     return lucro, viola_restricoes, restricoes
+
+
+
 
 
 if __name__ == '__main__':

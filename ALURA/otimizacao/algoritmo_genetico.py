@@ -3,13 +3,14 @@ from typing import List, Tuple
 from scipy.spatial.distance import euclidean  as distance_euclidean
 from deap import base, creator, tools, algorithms
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 def avaliacao(individuo: List[int], origem: Tuple[int], enderecos: List[Tuple[int]], destino: Tuple[int]) -> Tuple:
     distancia_percorrida = 0
     rota = [origem]
     for i in individuo:
-        distancia_percorrida+= distance_euclidean(enderecos[i], rota[-1])
+        distancia_percorrida += distance_euclidean(enderecos[i], rota[-1])
         rota.append(enderecos[i])
     distancia_percorrida += distance_euclidean(rota[-1], destino)
     rota.append(destino)
@@ -56,4 +57,22 @@ def algoritmos_geneticos(origem: Tuple[int],
 
 if __name__ == "__main__":
     melhor_rota, distancia = algoritmos_geneticos(origem, enderecos, destino)
+    for e, ponto in enumerate(melhor_rota):
+            x, y = ponto
+            cor = "black"
+            if e == 0:
+                cor = "blue"
+            elif e == len(melhor_rota) - 1:
+                cor = "red"
+            plt.scatter(x, y, color=cor)
+    
+            if e < len(melhor_rota)-1:
+                x1, y1 = melhor_rota[e+1]
+                # desenhando os vetores
+                dx = x1 - x
+                dy = y1 - y
+                plt.arrow(x, y, dx, dy, color="black", head_width=.1)
+        
+    plt.title(f"ditancia percorrida: {distancia}")
+    plt.show()
     print(melhor_rota, distancia)

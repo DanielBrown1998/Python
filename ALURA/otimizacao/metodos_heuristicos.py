@@ -24,12 +24,16 @@ def heuristica(origem: Tuple, destino: Tuple, enderecos: List[Tuple[int]], show=
         # atualizar a distancia        
         distancia_percorrida += distancia_ponto_a_ponto
         #adicionar o ponto a menor rota
+        
         menor_rota.append(ponto_prov)
+        
         #remover esse ponto dos pontos restantes
         enderecos_restantes.remove(ponto_prov)
+        
         #atualiza o ponto
         ponto_anterior = ponto_atual
         ponto_atual = ponto_prov
+        #atualiza a posicao dos enderecos
 
     # adicionando o último ponto
     distancia_percorrida += distance_euclidean(ponto_atual, destino)

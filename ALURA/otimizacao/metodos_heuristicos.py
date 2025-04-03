@@ -63,5 +63,5 @@ def heuristica(origem: Tuple, destino: Tuple, enderecos: List[Tuple[int]], show=
 
 
 if __name__ == "__main__":
-    sol = heuristica(origem, destino, enderecos, show=True)
+    sol = heuristica(origem, destino, enderecos, show=False)
     print(sol)

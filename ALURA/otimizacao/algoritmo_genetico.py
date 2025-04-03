@@ -24,6 +24,9 @@ def algoritmos_geneticos(origem: Tuple[int],
                          prob_cruzamento: float = .7, 
                          prob_mutacao: float = .1, 
                          num_geracoes: int = 100) -> Tuple:
+    
+    if len(enderecos) == 1:
+        return 0, 0
 
     creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
     creator.create("Individuo", list, fitness=creator.FitnessMin)

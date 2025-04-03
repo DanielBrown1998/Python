@@ -2,6 +2,14 @@ import matplotlib.pyplot as plt
 from scipy.spatial.distance import euclidean as distance_euclidean
 from typing import List, Tuple
 from valores import destino, origem, enderecos
+from forca_bruta import desenhar_rota
+
+
+def distancia_ate_final(origem, destino, enderecos):
+    return desenhar_rota(origem, destino, enderecos)
+
+
+
 
 # algoritmo guloso
 def heuristica(origem: Tuple, destino: Tuple, enderecos: List[Tuple[int]], show=False) -> Tuple:
@@ -14,15 +22,15 @@ def heuristica(origem: Tuple, destino: Tuple, enderecos: List[Tuple[int]], show=
         distancia_ponto_a_ponto = float("inf")
         # encontrar o ponto mais próximo do atual
         for ponto in enderecos_restantes:
-            
-            distancia = distance_euclidean(ponto_atual, ponto)
+            #custo
+            distancia = distance_euclidean(ponto_atual, ponto) + distancia_ate_final(ponto_atual, destino, enderecos_restantes)[1]
 
             if  distancia < distancia_ponto_a_ponto:
                 ponto_prov = ponto
                 distancia_ponto_a_ponto = distancia
                 
         # atualizar a distancia        
-        distancia_percorrida += distancia_ponto_a_ponto
+        distancia_percorrida += distancia_ponto_a_ponto - distancia_ate_final(ponto_atual, destino, enderecos_restantes)[1]
         #adicionar o ponto a menor rota
         
         menor_rota.append(ponto_prov)
@@ -31,12 +39,11 @@ def heuristica(origem: Tuple, destino: Tuple, enderecos: List[Tuple[int]], show=
         enderecos_restantes.remove(ponto_prov)
         
         #atualiza o ponto
-        ponto_anterior = ponto_atual
         ponto_atual = ponto_prov
         #atualiza a posicao dos enderecos
 
     # adicionando o último ponto
-    distancia_percorrida += distance_euclidean(ponto_atual, destino)
+    distancia_percorrida += distance_euclidean(ponto_atual, destino) - distancia_ate_final(ponto_atual, destino, enderecos_restantes)[1]
     menor_rota.append(destino)
     
     if show:
@@ -63,5 +70,6 @@ def heuristica(origem: Tuple, destino: Tuple, enderecos: List[Tuple[int]], show=
 
 
 if __name__ == "__main__":
+    print(enderecos)
     sol = heuristica(origem, destino, enderecos, show=False)
     print(sol)

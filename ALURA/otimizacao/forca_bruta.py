@@ -37,7 +37,7 @@ def desenhar_rota(origem: Tuple[int], destino: Tuple[int], enderecos: List[Tuple
     #resetando distancia_percorrida e determinando rota    
     distancia_percorrida = 0
     rota = [tuple(origem)] + [c for c in enderecos] + [tuple(destino)]
-    print(rota)
+    #print(rota)
     #construindo o gráfico
     for e, ponto in enumerate(rota):
         x, y = ponto

@@ -1,6 +1,6 @@
 import asyncio
 
-async def fatorial(num: int):
+def fatorial(num: int):
     resp = 1
     for i in range(1, num+1):
         resp *= i 
@@ -8,7 +8,7 @@ async def fatorial(num: int):
 
 async def exc_fatorial(num: int):
 
-    resp = await fatorial(num)
+    resp = fatorial(num)
     await asyncio.sleep(3)
     print(f"O fatorial de {num} e {resp}")
 
@@ -19,6 +19,7 @@ async def main():
     for item in numeros:
         print(f"iniciando o fatorial de {item}")
         task = exc_fatorial(item)
+        #asyncio.create_task(task)
         list_tasks.append(task)
 
     await asyncio.gather(

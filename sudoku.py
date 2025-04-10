@@ -1,5 +1,5 @@
 import numpy as np
-
+#sudoku codewars
 class Sudoku(object):
     def __init__(self, data) -> None:
         self.data: list[list[int]] = data
